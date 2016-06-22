@@ -1,0 +1,239 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{book}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Anderson}{A.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moore}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Prentice Hall}%
+  }
+  \strng{namehash}{ABMJ1}
+  \strng{fullhash}{ABMJ1}
+  \field{title}{Optimal control - Linear quadratic methods}
+  \list{location}{1}{%
+    {Englewood Cliffs, New Jersey}%
+  }
+  \field{year}{1989}
+\endentry
+
+\entry{quantpaper}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Baillieul}{B.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJ1}
+  \strng{fullhash}{BJ1}
+  \field{title}{Feedback designs for controlling device arrays with
+  communication channel bandwidth constraints}
+  \field{journaltitle}{ARO Workshop on Smart Structures}
+  \field{year}{1999}
+\endentry
+
+\entry{quantoverview}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {et.al.}{e.}%
+     {Girish N.~Nair}{G.~N.~N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{eGNN1}
+  \strng{fullhash}{eGNN1}
+  \field{title}{Feedback control under data rate constraints: An Overview}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{2007}
+\endentry
+
+\entry{robust1}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zhou}{Z.}%
+     {Kemin}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Doyle}{D.}%
+     {John~C.}{J.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Glover}{G.}%
+     {Keith}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Prentice Hall}%
+  }
+  \strng{namehash}{ZKDJCGK1}
+  \strng{fullhash}{ZKDJCGK1}
+  \field{title}{Robust and Optimal Control}
+  \list{location}{1}{%
+    {Englewood Cliffs, New Jersey}%
+  }
+  \field{year}{1995}
+\endentry
+
+\entry{robust2}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Elia}{E.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EN1}
+  \strng{fullhash}{EN1}
+  \field{title}{Remote stabilization over fading channels}
+  \field{journaltitle}{Systems and Control Letters, vol. 54, no. 3, pp.
+  237–249}
+  \field{year}{2005}
+\endentry
+
+\entry{lmi}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ghaoui}{G.}%
+     {L.~El}{L.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GLE1}
+  \strng{fullhash}{GLE1}
+  \field{title}{State-feedback control of systems with multiplicative noise via
+  linear matrix inequalities}
+  \field{journaltitle}{Systems and Control Letters, vol. 24, no. 3, pp.
+  223–228}
+  \field{year}{1995}
+\endentry
+
+\entry{uncthres}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Athans}{A.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ku}{K.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gershwin}{G.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AMKRGS1}
+  \strng{fullhash}{AMKRGS1}
+  \field{title}{The uncertainty threshold principle: some fundamental
+  limitations of optimal decision making under dynamic uncertainty}
+  \field{journaltitle}{Automatic Control, IEEE Transactions on., vol. 22, no.
+  3, pp. 491–495}
+  \field{year}{1977}
+\endentry
+
+\entry{mult_thesis}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ranade}{R.}%
+     {Gireeja~Vishnu}{G.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RGV1}
+  \strng{fullhash}{RGV1}
+  \field{title}{Active Systems with Uncertain Parameters: an
+  Information-Theoretic Perspective}
+  \field{year}{2014}
+\endentry
+
+\entry{git_rct}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pandey}{P.}%
+     {Ayush}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PA1}
+  \strng{fullhash}{PA1}
+  \field{title}{MATLAB source files and project reports}
+  \verb{url}
+  \verb http://github.com/ayush9pandey/robustControl/
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{git_dac}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Pandey}{P.}%
+     {Ayush}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Adhikari}{A.}%
+     {Rana}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PAAR1}
+  \strng{fullhash}{PAAR1}
+  \field{title}{MATLAB source files and project reports}
+  \verb{url}
+  \verb http://github.com/ayush9pandey/DACdenoising/
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{git}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pandey}{P.}%
+     {Ayush}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PA1}
+  \strng{fullhash}{PA1}
+  \field{title}{Project source files. LaTeX project reports and MATLAB codes}
+  \verb{url}
+  \verb http://github.com/ayush9pandey/Control-Perf-Est-Tradeoff/
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

@@ -1,0 +1,38 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{samir}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Joshi}{J.}%
+     {Suresh~M.}{S.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JSM1}
+  \strng{fullhash}{JSM1}
+  \field{title}{On Optimal Control of Linear Systems in the Presence of
+  Multiplicative Noise}
+  \field{journaltitle}{IEEE Transactions on Aerospace and Electronic Systems}
+  \field{year}{1976}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

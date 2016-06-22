@@ -1,0 +1,235 @@
+\documentclass[12pt]{caltech_thesis}
+\usepackage[hyphens]{url}
+\usepackage{lipsum}
+\usepackage{graphicx}
+
+\usepackage{todonotes}
+
+%% Tentative: newtx for better-looking Times
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+
+% Must use biblatex to produce the Published Contents and Contributions, per-chapter bibliography (if desired), etc.
+\usepackage[
+    backend=biber,natbib,
+    % IMPORTANT: load a style suitable for your discipline
+    style=authoryear
+]{biblatex}
+
+% Name of your .bib file(s)
+\addbibresource{progress_ref.bib}
+\addbibresource{progress1_own_pubs.bib}
+
+\begin{document}
+
+% Do remember to remove the square bracket!
+\title{[Thesis Title]}
+\author{[Your Full Name]}
+
+\degreeaward{[Name of Degree]}                 % Degree to be awarded
+\university{California Institute of Technology}    % Institution name
+\address{Pasadena, California}                     % Institution address
+\unilogo{caltech.png}                                 % Institution logo
+\copyyear{[Year Degree Conferred]}  % Year (of graduation) on diploma
+\defenddate{[Exact Date]}          % Date of defense
+
+%\orcid{[Author ORCID]}
+
+%% IMPORTANT: Select ONE of the rights statement below.
+\rightsstatement{All rights reserved\todo[size=\footnotesize]{Choose one from the choices in the source code!! And delete this \texttt{todo} when you're done that. :-)}}
+% \rightsstatement{All rights reserved except where otherwise noted}
+% \rightsstatement{Some rights reserved. This thesis is distributed under a [name license, e.g., ``Creative Commons Attribution-NonCommercial-ShareAlike License'']}
+
+%%  If you'd like to remove the Caltech logo from your title page, simply remove the "[logo]" text from the maketitle command
+\maketitle[logo]
+%\maketitle
+
+\begin{acknowledgements} 	 
+   [Add acknowledgements here. If you do not wish to add any to your thesis, you may simply add a blank titled Acknowledgements page.]
+\end{acknowledgements}
+
+\begin{abstract}
+   [This abstract must provide a succinct and informative condensation of your work. Candidates are welcome to prepare a lengthier abstract for inclusion in the dissertation, and provide a shorter one in the CaltechTHESIS record.]
+\end{abstract}
+
+%% Uncomment the `iknowhattodo' option to dismiss the instruction in the PDF.
+\begin{publishedcontent}%[iknowwhattodo]
+% List your publications and contributions here.
+\nocite{Cahn:etal:2015}
+\end{publishedcontent}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature
+
+\mainmatter
+
+\chapter{Introduction}
+Start off all chapters with \verb|chapter|. \index{chapter!numbered} \verb|\extrachapter| will give you an unnumbered chapter that's added to the Table of Contents. \index{chapter!unnumbered}
+
+Here's an example of a citation \citep{GMP81}. Here's another \citep{PP98}. These will appear in the big bibliography at the end of the thesis.
+\index{bibliography}
+
+If you're new to \LaTeX{} and would like to begin by learning the basics, please see our free online course available at:\\ \url{https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1} \index{LaTeX@\LaTeX}
+
+You can define nomenclatures \index{nomenclature} as you talk about key terms in your thesis. So what's a galaxy? \nomenclature{Galaxy}{A system of stars independent from all other systems}
+
+
+\section{This is a Section}
+
+\section{Obtaining lower bound to  the performance index in an LQG control system with stochastic parameters}
+
+For the imperfect information case, as in \cite{samir}, we aim to obtain a lower bound to the performance index without using the ``enforced" separation method presented in \cite{samir} which leads to a suboptimal controller. In Eq.(24) of \cite{samir}, the term containing $\tilde{x}(N-1)$ has been ignored to enforce the separation principle which does not hold otherwise in this case. The equation is shown below:
+\begin{align*}
+\min_{u(n-2)}& \lbrace\mathbb{E}\left[x^{T}(N-1)W(n-1)x(N-1)+u^{T}(N-2)R(N-2)u(N-2)\right] \\&+\mathbb{E}\left[\tilde{x}^{T}(N-1)M_{1}(N-1)\tilde{x}(N-1)\right]\rbrace\\
+\intertext{Instead of ignoring the second part with the estimation error as in \cite{samir}, we aim to find a lower bound to the above using the following.}
+\min_{u(N-2)} & \lbrace\mathbb{E}\left[x^{T}(N-1)W(n-1)x(N-1)+u^{T}(N-2)R(N-2)u(N-2)\right] \\& + \mathbb{E}\left[\tilde{x}^{T}(N-1)M_{1}(N-1)\tilde{x}(N-1)\right]\rbrace \geq \\ \min_{u(N-2)}& \left\lbrace\mathbb{E}\left[x^{T}(N-1)W(n-1)x(N-1)+u^{T}(N-2)R(N-2)u(N-2)\right]\right\rbrace + \\& \min_{u(N-2)} \left\lbrace \mathbb{E}\left[\tilde{x}^{T}(N-1)M_{1}(N-1)\tilde{x}(N-1)\right]\right\rbrace\\
+\intertext{Minimization of the first part would be the same as in the ``enforced" separation case in \cite{samir}. The second part, the part with the estimation error needs to be minimized now as shown below:}
+\tilde{x}(N-1)&=x(N-1) - \hat{x}(N-1)\\
+\intertext{where $\hat{x}(N-1)$ is the estimate of $x$ given the observations $y(0),y(1),...,y(N-1)$ denoted as $Y_{0}^{N-1}$}
+\hat{x}(N-1)&=\mathbb{E}\left[x(N-1)|Y_{0}^{N-1}\right]\\
+\intertext{Substituting for $x(N-1)$ from the system dynamics equations (Eq.(1) in \cite{samir}), we get for scalar case}
+x(N-1)&=A(N-2)x(N-2)+u(N-2)+w(N-2)\\
+\tilde{x}(N-1)&=A(N-2)x(N-2)+u(N-2)+w(N-2)\\&-\mathbb{E}\left[A(N-2)x(N-2) + u(N-2) + w(N-2) | Y_{0}^{N-1}\right]\\
+\intertext{For scalar case, since $M_{1}(N-1)$ is constant (see \cite{samir}), we need to minimize $\tilde{x}^{2}(N-1)$ with respect to $u(N-2)$. Squaring, we get,}
+\tilde{x}^{2}(N-1)&=\left\lbrace A(N-2)x(N-2)+u(N-2)+w(N-2)\right\rbrace^{2} \\&+ \mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]^{2}\\&- 2\mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]\\& .\left[A(N-2)x(N-2)+u(N-2)+w(N-2)\right]\\
+\intertext{On differentiating the above expression for $\tilde{x}^{2}(N-1)$ with respect to $u(N-2)$ we get $0$, as all terms cancel out. Here is the \textbf{expansion of $\tilde{x}^{2}(N-1)$}:}
+\tilde{x}^{2}(N-1) &= A^{2}(N-2)x^{2}(N-2) + u^{2}(N-2) + w^{2}(N-2) \\&+ 2A(N-2)x(N-2)u(N-2)+2u(N-2)w(N-2)\\&+2A(N-2)x(N-2)w(N-2) \\&+\left\lbrace\mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}\\&-2\mathbb{E}\left[A(N-2)x(N-2) + u(N-2) + w(N-2) | Y_{0}^{N-1}\right]\\&.\left[A(N-2)x(N-2)+ u(N-2) + w(N-2)\right]\\
+\intertext{Now using the linearity property of expected value we write the following}
+&\mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]\\&=\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\\&+\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]+\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\
+\intertext{Squaring we get,}
+&\left\lbrace\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+\left\lbrace\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}\\&+\left\lbrace\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\
+\intertext{Substituting the above in the expression for $\tilde{x}^{2}(N-1)$ obtained above, we get}
+\tilde{x}^{2}(N-1)&=A^{2}(N-2)x^{2}(N-2) + u^{2}(N-2) + w^{2}(N-2) +2A(N-2)x(N-2)u(N-2)\\&+2u(N-2)w(N-2)+2A(N-2)x(N-2)w(N-2) \\&+\left\lbrace\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+\left\lbrace\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}\\&+\left\lbrace\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]A(N-2)x(N-2)\\&-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]A(N-2)x(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]A(N-2)x(N-2)\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]u(N-2)-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]u(N-2)\\&-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]u(N-2)-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]w(N-2)\\&-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]w(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]w(N-2)\\
+\intertext{Now differentiating with respect to $u(N-2)$, we get}
+0+&2u(N-2)+0+2A(N-2)x(N-2)+2w(N-2)+0+0\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[1|Y_{0}^{N-1}\right]+0+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[1|Y_{0}^{N-1}\right]\\&+0+2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[1|Y_{0}^{N-1}\right]-0-2A(N-2)x(N-2)\mathbb{E}\left[1|Y_{0}^{N-1}\right]\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].1-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right].1\\&-2\mathbb{E}\left[1|Y_{0}^{N-1}\right]u(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right].1\\&-0-2\mathbb{E}\left[1|Y_{0}^{N-1}\right]w(N-2)-0\\
+\intertext{Using $\mathbb{E}\left[1|Y_{0}^{N-1}\right] = 1$, we have}
+&2u(N-2)+2A(N-2)x(N-2)+2w(N-2)\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]-2A(N-2)x(N-2)\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\\&-2u(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]-2w(N-2)
+\end{align*}
+As we can see, all the terms cancel out and hence the derivative is zero.
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=.3\textwidth]{caltech.png}
+\caption{This is a figure}\label{fig:logo}
+\index{figures}
+\end{figure}
+
+\subsection{This is a subsection}
+
+\begin{table}[hbt!]
+\centering
+\begin{tabular}{ll}
+\hline
+Area & Count\\
+\hline
+North & 100\\
+South & 200\\
+East & 80\\
+West & 140\\
+\hline
+\end{tabular}
+\caption{This is a table}\label{tab:sample}
+\index{tables}
+\end{table}
+
+\lipsum[3] \nomenclature{Asteroid}{A very small planet ranging from 1,000 km to less than one km in diameter. Asteroids are found commonly around other larger planets}
+
+\lipsum[4-5] 
+
+Here's an endnote.\endnote{Endnotes are notes that you can use to explain text in a document.}
+
+\section{This is Another Section}
+\lipsum[6-7] 
+
+\chapter{This is the Second Chapter}
+\begin{refsection}
+If you'd like to have separate bibliographies at the end of each chapter, put a \verb|refsection| around the material of each chapter, then cite as usual -- e.g.~\citep{GMP81,Ful83}. Then do a \verb|\printbibliography| just before the \verb|refsection| ends. \index{bibliography!by chapter}
+
+\printbibliography[heading=subbibliography]
+\end{refsection}
+
+
+\chapter{This is the Third Chapter}
+
+\publishedas{Cahn:etal:2015}
+
+[You can have chapters that were published as part of your thesis. The text style of the body should be single column, as it was submitted to the publisher, not formatted as the publisher did.]
+
+\chapter{This is the Fourth Chapter}
+\chapter{This is the Fifth Chapter}
+\chapter{This is the Sixth Chapter}
+\chapter{This is the Seventh Chapter}
+\chapter{This is the Eighth Chapter}
+
+\printbibliography[heading=bibintoc]
+
+\appendix
+
+\chapter{Questionnaire}
+\chapter{Consent Form}
+
+\printindex
+
+\theendnotes
+
+%% Pocket materials at the VERY END of thesis
+\pocketmaterial
+\extrachapter{Pocket Material: Map of Case Study Solar Systems} 
+
+
+\end{document}
+%\documentclass[a4paper,12pt]{article}
+%%\usepackage[utf8x]{inputenc}
+%\usepackage[utf8]{inputenc}
+%%\usepackage{lipsum}
+%\usepackage{amsmath,amsthm,mathrsfs}
+%\usepackage[english]{babel}
+%\usepackage{textcomp}
+%%\usepackage[T1]{fontenc}
+%\usepackage{graphicx,wrapfig}
+%\usepackage{amssymb}
+%
+%\newcommand\norm[1]{\left\lVert#1\right\rVert}
+%\usepackage{calc}
+%\usepackage{rotating}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage{fancyhdr}
+%%\usepackage{subfigure}
+%\usepackage{hyperref}
+%\usepackage{longtable}
+%\usepackage{svg}
+%\usepackage{float}
+%\usepackage{rotating}
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage{fancyhdr}
+%%\usepackage{subfigure} 
+%\usepackage[english]{babel}
+%\usepackage[backend=bibtex,
+%style=numeric,
+%bibencoding=ascii,
+%sorting=none
+%%style=alphabetic
+%%style=reading
+%]{biblatex}
+%\usepackage{hyperref}
+%\addbibresource{progress1_ref}
+%\usepackage[a4paper, margin=1.5in]{geometry}
+%\usepackage{pifont}
+%\usepackage{xcolor}
+%\usepackage{dirtytalk}
+%\hypersetup{
+%    colorlinks,
+%    linkcolor={red!50!black},
+%    citecolor={blue!50!black},
+%    urlcolor={blue!80!black}
+%}
+%\graphicspath{{images/}}
+%%\usepackage{times}
+%%\usepackage[scaled=0.8]{beramono}
+% \renewcommand{\familydefault}{\rmdefault}
+%\begin{document}
+%
+%\printbibliography     
+%\end{document} % The document ends here

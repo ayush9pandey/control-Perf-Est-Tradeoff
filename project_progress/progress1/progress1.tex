@@ -1,0 +1,205 @@
+%%%%%%%%%%%%
+%% Please rename this main.tex file and the output PDF to
+%% [lastname_firstname_graduationyear]
+%% before submission.
+%%%%%%%%%%%%
+
+\documentclass[12pt]{caltech_thesis_progress1}
+\usepackage[hyphens]{url}
+\usepackage{lipsum}
+\usepackage{graphicx}
+
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage{dirtytalk}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\renewcommand{\chaptername}{}
+\AtBeginDocument{\renewcommand{\bibname}{References}}
+%% Tentative: newtx for better-looking Times
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[backend=bibtex,
+style=numeric,
+bibencoding=ascii,
+sorting=none
+%style=alphabetic
+%style=reading
+]{biblatex}
+
+%\renewcommand{\familydefault}{\rmdefault}
+% Must use biblatex to produce the Published Contents and Contributions, per-chapter bibliography (if desired), etc.
+% Name of your .bib file(s)
+\addbibresource{example.bib}
+\addbibresource{ownpubs.bib}
+
+\begin{document}
+
+% Do remember to remove the square bracket!
+\title{Information-Performance Tradeoffs in Control}
+\author{Ayush Pandey}
+
+%\degreeaward{Visiting Undergraduate Research Program}                 % Degree to be awarded
+\university{California Institute of Technology}    % Institution name
+\address{Pasadena, California}                     % Institution address
+\unilogo{caltech.png}                                 % Institution logo
+\copyyear{June 2016}  % Year (of graduation) on diploma
+\defenddate{17th June}          % Date of defense
+%
+%\orcid{[Author ORCID]}
+
+%% IMPORTANT: Select ONE of the rights statement below.
+%\rightsstatement{All rights reserved\todo[size=\footnotesize]{Choose one from the choices in the source code!! And delete this \texttt{todo} when you're done that. :-)}}
+% \rightsstatement{All rights reserved except where otherwise noted}
+% \rightsstatement{Some rights reserved. This thesis is distributed under a [name license, e.g., ``Creative Commons Attribution-NonCommercial-ShareAlike License'']}
+
+%%  If you'd like to remove the Caltech logo from your title page, simply remove the "[logo]" text from the maketitle command
+\maketitle[logo]
+%\maketitle
+
+%\begin{acknowledgements} 	 
+%   [Add acknowledgements here. If you do not wish to add any to your thesis, you may simply add a blank titled Acknowledgements page.]
+%\end{acknowledgements}
+%
+%\begin{abstract}
+%   [This abstract must provide a succinct and informative condensation of your work. Candidates are welcome to prepare a lengthier abstract for inclusion in the dissertation, and provide a shorter one in the CaltechTHESIS record.]
+%\end{abstract}
+
+%% Uncomment the `iknowhattodo' option to dismiss the instruction in the PDF.
+%\begin{publishedcontent}%[iknowwhattodo]
+%% List your publications and contributions here.
+%\nocite{Cahn:etal:2015}
+%\end{publishedcontent}
+
+\tableofcontents
+%\listoffigures
+%\listoftables
+%\printnomenclature
+
+\mainmatter
+\chapter{Introduction}
+%intro
+Networked control systems are increasingly finding applications in automation of our daily life activities. As a result, over the past few decades the fields of communication and control have been subject to intense investigations to support the emerging needs of the society. The components of a networked control system are physically distributed with communication links between the plant, controller, observer and/or the actuators. These links connecting the different components are often noisy and pose other constraints \cite{constraints} which are not dealt in control theory or information theory alone. Hence, the control algorithm design and system analysis needs to be done keeping in mind the information bottlenecks. In control system design, it is usually desired to minimize a performance index. Because of the information bottlenecks, there exists a tradeoff between the best achievable performance and the observation accuracy.  
+	\section{Motivation}
+This project aims to study the tradeoff between the minimum achievable value of the performance index and the accuracy of observations for systems with additive noises both in the plant and in observations. We also conisder the effect of additional network induced constraints such as multiplicative uncertainties in system dynamics and rate-limited communication channels. \\
+Systems with stochastic parameters (multiplicative uncertanity) arise naturally in digital control where parameters such as the sampling period \cite{deko80}, the controller parameters \cite{deko84} or the parameters of the plant \cite{deko89} may be random. Such systems often find extensive application in economic systems as well. \\
+It is a well-known result that LQG control (described in the project proposal) design leads to guaranteed closed loop stability margins \cite{doylegua}. The down side to LQG control design is that the closed-loop system is not robust to parameter deviations. Hence, the study of LQG control design for system with stochastic parameters paves the way for the design of robust control systems. Also, when system parameters have multiplicative uncertainty, the stability is not any more guaranteed as in standard LQG control design. We aim to find out stabilizability conditions for such systems with noisy observations. 
+\chapter{Background}
+The project proposal document reviewed a few preliminaries such as the classical LQG control problem in some detail. Also, a preliminary description of multiplicative uncertainty in system and data rate constraint in a networked control system was also given. Here we review the literature related to the project in detail.
+	\section{Literature Review}
+		A detailed account of constraints in a networked control system is given in the survey paper \cite{constraints}. Also, a review of the work done for optimal control design with network constraints can be found in the Introduction of \cite{gireeja}. \\
+	In \cite{utp}, an `Uncertainty Threshold Principle' has been presented. A scalar system with random parameters has been considered for optimal control design. Conditions for stability for such a system have been given. They show that the system is stable only upto a given bound which is dependent on the statistical properties of the random parameters. This result shows that an optimal control design for systems with random parameters may not result in a stable closed loop system. \cite{utp} assumes that perfect system information is available for control design and there are no other constraints on the system. \\
+	The paper \cite{utp} was published in 1976. Since then there have been various efforts to extend the results for more complicated scenarios. The research on the problem with perfect state measurement is quite extensive. \cite{deko82} generalized the concepts presented in \cite{utp}. Also, \cite{deko88} assumes complete state information and derives an optimal controller for stochastically sampled continuous time system. The discrete time counterpart of this result has been given in \cite{yaz}\\ In (\cite{berstekas} p.229), a generalized problem has been dealt with but only for the perfect information case, i.e. when all states are accurately measured. \cite{berstekas} mentions that there is no analytical solution for the imperfect information counterpart of this problem. \\
+	There have been various attempts to solve the problem of LQG control design for a system with stochastic parameters and imperfect measurements of the state. The optimal analytical solution has not yet been found. In \cite{samir}, a suboptimal controller has been designed using a heuristic reasoning approach. Dombrovskii and Lyashenko in \cite{russian} gives optimal output feedback controller for the same problem and show it's application to an investement portfolio optimization. Their controller designs have been limited to output feedback controllers with fixed controller structure. Willigenburg and De Koning in \cite{deko} propose a linear optimal controller design which is a reduced-order controller. They propose numerical methods to compute such a controller which has a given fixed structure. \\
+The major aim of this project is to study optimal control systems with random system parameters when state observations are not accurate and when the data rate of communication is limited. In \cite{tatikonda}, the problem of control under communication constraint has been handled. However, \cite{tatikonda} and similar research on this line (\cite{rate1},\cite{rate2}) considers noiseless rate-limited channel only.\\
+	As mentioned earlier that there is no analytical solution for the imperfect information counterpart of optimal control design for system with stochastic parameters \cite{berstekas}. Though \cite{berstekas} doesn't give an explicit reason to why the solution is not possible, but there have been other works which try to investigate it. The work in this project aims to deal with this problem in much more detail. The main reason why this problem does not have an analytical solution is because separation theorem is no longer valid in this case. This formed a part of the work in \cite{samir}. Also, \cite{schenatto}, put light on this fact that separation principle doesn't hold for this case as the estimation error covariance depends on the control input. Hence, the estimation and control cannot be done "separately". 
+\chapter{Objectives}
+We aim to study the optimal control problem of systems with stochastic parameters in the imperfect information case. Since, it is an unsolved problem, we aim to instead first find out a bound to the performance index. 
+	\section{Problem Formulation}
+	\label{problem}
+		Consider a discrete time system,
+			\begin{align}
+			\label{system}
+				x_{t+1}&=A_{t}x_{t} + u_{t} + w_{t}\\
+				y_{t}&=x_{t}+v_{t}
+			\end{align}
+			where $A_{t}$ is a random parameter, $w_{t}$ and $v_{t}$ are gaussian noises in the plant and the measurement respectively, independent of each other. $x_{t}$ are the system states, with known statistical properties of $x_{0}$, which is assumed to be independent of the noises. and $y_{t}$ are the measurements. For simplicity, we only consider a scalar case.\\
+			The minimum mean square error estimate (MMSE) of $x_{t}$ given the noisy observations $y_{1},...,y_{t}$ is given by the Kalman filter,
+			\begin{equation}
+			\tilde{x}_{t} =\mathbb{E}\left[x_{t} | y_{1},...,y_{t}\right]
+\end{equation}			 
+In standard LQG, the Kalman filter above can be calculated iteratively since it is independent of the control, i.e. the separation theorem holds true. But in this case, it doesn't and hence it is not known how to compute the solution to it. To calculate a stability bound for the system in terms of the statistical properties of $A_{t}$, we would aim to find out a best lower bound to the minimum attainable performance cost.  
+\chapter{Project Progress}
+To understand the basics clearly for a system with random parameters, the condition for stabilizability as given in \cite{utp} was re-derived. As mentioned earlier, in \cite{utp} perfect state measurements are assumed to be available. For this case, the stabilizability condition for the system in Eq.(\ref{system}) can be reduced to,
+		\begin{equation}
+			\sigma_{A}^{2} \leq 1
+		\end{equation}	
+		Next, we tackled the imperfect information case, following up the work in \cite{samir}.	 
+\subsection{Obtaining lower bound to  the performance index in an LQG control system with stochastic parameters}
+We aim to obtain a lower bound to the performance index without using the ``enforced" separation method presented in \cite{samir} which leads to a suboptimal controller. In Eq.(24) of \cite{samir}, the term containing $\tilde{x}(N-1)$, i.e. the estimation error has been ignored to enforce the separation principle which does not hold otherwise in this case, since the estimation error is dependent on control input. The equation is shown below. It is the second step of optimization using discrete dynamic programming technique being followed in the paper.
+\begin{align*}
+\min_{u(n-2)}& \lbrace\mathbb{E}\left[x^{T}(N-1)W(n-1)x(N-1)+u^{T}(N-2)R(N-2)u(N-2)\right] \\&+\mathbb{E}\left[\tilde{x}^{T}(N-1)M_{1}(N-1)\tilde{x}(N-1)\right]\rbrace\\
+\intertext{Instead of ignoring the second part with the estimation error as in \cite{samir}, we aim to find a lower bound to the above using the following.}
+\min_{u(N-2)} & \lbrace\mathbb{E}\left[x^{T}(N-1)W(n-1)x(N-1)+u^{T}(N-2)R(N-2)u(N-2)\right] \\& + \mathbb{E}\left[\tilde{x}^{T}(N-1)M_{1}(N-1)\tilde{x}(N-1)\right]\rbrace \geq \\ \min_{u(N-2)}& \left\lbrace\mathbb{E}\left[x^{T}(N-1)W(n-1)x(N-1)+u^{T}(N-2)R(N-2)u(N-2)\right]\right\rbrace + \\& \min_{u(N-2)} \left\lbrace \mathbb{E}\left[\tilde{x}^{T}(N-1)M_{1}(N-1)\tilde{x}(N-1)\right]\right\rbrace\\
+\intertext{Minimization of the first part would be the same as in the ``enforced" separation case in \cite{samir}. The second part, the part with the estimation error needs to be minimized now as shown below:}
+\tilde{x}(N-1)&=x(N-1) - \hat{x}(N-1)\\
+\intertext{where $\hat{x}(N-1)$ is the estimate of $x$ given the observations $y(0),y(1),...,y(N-1)$ denoted as $Y_{0}^{N-1}$}
+\hat{x}(N-1)&=\mathbb{E}\left[x(N-1)|Y_{0}^{N-1}\right]\\
+\intertext{Substituting for $x(N-1)$ from the system dynamics equations Eq.(\ref{system}), we get for scalar case}
+x(N-1)&=A(N-2)x(N-2)+u(N-2)+w(N-2)\\
+\tilde{x}(N-1)&=A(N-2)x(N-2)+u(N-2)+w(N-2)\\&-\mathbb{E}\left[A(N-2)x(N-2) + u(N-2) + w(N-2) | Y_{0}^{N-1}\right]
+%\tilde{x}^{2}(N-1)&=\left\lbrace A(N-2)x(N-2)+u(N-2)+w(N-2)\right\rbrace^{2} \\&+ \mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]^{2}\\&- 2\mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]\\& .\left[A(N-2)x(N-2)+u(N-2)+w(N-2)\right]\\
+%\intertext{On differentiating the above expression for $\tilde{x}^{2}(N-1)$ with respect to $u(N-2)$ we get $0$, as all terms cancel out. Here is the \textbf{expansion of $\tilde{x}^{2}(N-1)$}:}
+%\tilde{x}^{2}(N-1) &= A^{2}(N-2)x^{2}(N-2) + u^{2}(N-2) + w^{2}(N-2) \\&+ 2A(N-2)x(N-2)u(N-2)+2u(N-2)w(N-2)\\&+2A(N-2)x(N-2)w(N-2) \\&+\left\lbrace\mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}\\&-2\mathbb{E}\left[A(N-2)x(N-2) + u(N-2) + w(N-2) | Y_{0}^{N-1}\right]\\&.\left[A(N-2)x(N-2)+ u(N-2) + w(N-2)\right]\\
+%\intertext{Now using the linearity property of expected value we write the following}
+%&\mathbb{E}\left[A(N-2)x(N-2)+u(N-2)+w(N-2)|Y_{0}^{N-1}\right]\\&=\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\\&+\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]+\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\
+%\intertext{Squaring we get,}
+%&\left\lbrace\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+\left\lbrace\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}\\&+\left\lbrace\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\
+%\intertext{Substituting the above in the expression for $\tilde{x}^{2}(N-1)$ obtained above, we get}
+%\tilde{x}^{2}(N-1)&=A^{2}(N-2)x^{2}(N-2) + u^{2}(N-2) + w^{2}(N-2) +2A(N-2)x(N-2)u(N-2)\\&+2u(N-2)w(N-2)+2A(N-2)x(N-2)w(N-2) \\&+\left\lbrace\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+\left\lbrace\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}\\&+\left\lbrace\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\right\rbrace^{2}+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]A(N-2)x(N-2)\\&-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]A(N-2)x(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]A(N-2)x(N-2)\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]u(N-2)-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]u(N-2)\\&-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]u(N-2)-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]w(N-2)\\&-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]w(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]w(N-2)\\
+%\intertext{Now differentiating with respect to $u(N-2)$, we get}
+%0+&2u(N-2)+0+2A(N-2)x(N-2)+2w(N-2)+0+0\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[1|Y_{0}^{N-1}\right]+0+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[1|Y_{0}^{N-1}\right]\\&+0+2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right].\mathbb{E}\left[1|Y_{0}^{N-1}\right]-0-2A(N-2)x(N-2)\mathbb{E}\left[1|Y_{0}^{N-1}\right]\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right].1-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right].1\\&-2\mathbb{E}\left[1|Y_{0}^{N-1}\right]u(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right].1\\&-0-2\mathbb{E}\left[1|Y_{0}^{N-1}\right]w(N-2)-0\\
+%\intertext{Using $\mathbb{E}\left[1|Y_{0}^{N-1}\right] = 1$, we have}
+%&2u(N-2)+2A(N-2)x(N-2)+2w(N-2)\\&+2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]+2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]\\&+2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]-2A(N-2)x(N-2)\\&-2\mathbb{E}\left[A(N-2)x(N-2)|Y_{0}^{N-1}\right]-2\mathbb{E}\left[u(N-2)|Y_{0}^{N-1}\right]\\&-2u(N-2)-2\mathbb{E}\left[w(N-2)|Y_{0}^{N-1}\right]-2w(N-2)
+\end{align*}
+For scalar case, since $M_{1}(N-1)$ is constant (see \cite{samir}), we need to minimize $\tilde{x}^{2}(N-1)$ with respect to $u(N-2)$.\\
+%As we can see, all the terms cancel out and hence the derivative is zero.
+The minimization of the estimation error here is not straightforward because $x(N-2)$ also depends on $u(N-2)$ and we realized that simple differentiation to obtain the minimum would not work here.\\
+
+\subsection{Concluding Remarks}
+We tried to tackle the problem formulated in Section(\ref{problem}). The equations that were worked out above do give us the background about why the problem doesn not have an analytical solution as mentioned in \cite{berstekas}. Also, we were able to see the effect that ``inseparability" in LQG control of the problem in Section(\ref{problem}) has on minimization of the performance index. 
+\chapter{Goals and Project Timeline}
+For the coming weeks, we would aim to deal with the problem presented in \cite{anatoly}. The paper deals with Gaussian noise in the plant, $w_{t}$ and provides an optimal solution to multi-rate control over AWGN channels (See \cite{anatoly}). We would aim to deal with a similar problem but for the case when the plant noise is not Gaussian but has some other probabilistic (known) distribution. For this case, we would aim to obtain bounds on the performance index and would try to prove that even for non-Gaussian noise, we can get a cost close to the optimal cost. \\ 
+Also, as mentioned earlier in the project proposal, we would be interested in dealing with the quantization problem in networked control systems. Due to limited data rate of communication in every practical system we quantize the data being transmitted which introduces another source of noise into the system which may be referred to as the quantization noise. We would aim to quantize the data in such a way that our performance  cost is minimum. This could be done adaptively considering the probability distribution of the data being transmitted. Also, in various practical systems, a variable data rate could be used to achieve even better performance. We already looked into a few papers (\cite{gireeja}, \cite{tatikonda},  \cite{rate1}, \cite{rate2}) that deal with the rate constraint in control systems from information theoretic perspective. We aim to bring some of those concepts along with others related to quantization and data rate constraints into this project as well.
+
+%\begin{figure}[hbt!]
+%\centering
+%\includegraphics[width=.3\textwidth]{caltech.png}
+%\caption{This is a figure}\label{fig:logo}
+%\index{figures}
+%\end{figure}
+
+
+%\begin{table}[hbt!]
+%\centering
+%\begin{tabular}{ll}
+%\hline
+%Area & Count\\
+%\hline
+%North & 100\\
+%South & 200\\
+%East & 80\\
+%West & 140\\
+%\hline
+%\end{tabular}
+%\caption{This is a table}\label{tab:sample}
+%\index{tables}
+%\end{table}
+
+
+%\endnote{Endnotes are notes that you can use to explain text in a document.}
+
+
+
+\printbibliography[heading=bibintoc]
+%
+%\appendix
+
+%\chapter{Questionnaire}
+%\chapter{Consent Form}
+
+%\printindex
+%
+%\theendnotes
+%
+%%% Pocket materials at the VERY END of thesis
+%\pocketmaterial
+%\extrachapter{Pocket Material: Map of Case Study Solar Systems} 
+%
+
+\end{document}

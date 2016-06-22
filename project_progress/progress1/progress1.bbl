@@ -1,0 +1,402 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{constraints}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {Lixian}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gao}{G.}%
+     {Huijun}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kaynak}{K.}%
+     {Okyay}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZLGHKO1}
+  \strng{fullhash}{ZLGHKO1}
+  \field{title}{Network-Induced Constraints in Networked Control Systems - A
+  Survey}
+  \field{journaltitle}{IEEE Transactions on Industrial Informatics}
+  \field{year}{2013}
+\endentry
+
+\entry{deko80}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Koning}{K.}%
+     {W.~L.~De}{W.~L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KWLD1}
+  \strng{fullhash}{KWLD1}
+  \field{title}{Equivalent discrete optimal control problem for randomly
+  sampled digital control systems}
+  \field{journaltitle}{Automatica}
+  \field{year}{1980}
+\endentry
+
+\entry{deko84}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wingerden}{W.}%
+     {A.J.M.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koning}{K.}%
+     {W.~L.~De}{W.~L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WAKWLD1}
+  \strng{fullhash}{WAKWLD1}
+  \field{title}{The influence of finite word length on digital optimal control}
+  \field{journaltitle}{IEEE Transactions of Automation and Control}
+  \field{year}{1984}
+\endentry
+
+\entry{deko89}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wagenaar}{W.}%
+     {T.J.A}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koning}{K.}%
+     {W.~L.~De}{W.~L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WTKWLD1}
+  \strng{fullhash}{WTKWLD1}
+  \field{title}{Stability and stabilizability of chemical reactors modeled with
+  white parameters}
+  \field{journaltitle}{International Journal of Control}
+  \field{year}{1989}
+\endentry
+
+\entry{doylegua}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Doyle}{D.}%
+     {John~C}{J.~C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DJC1}
+  \strng{fullhash}{DJC1}
+  \field{title}{Guaranteed margins for LQG regulators}
+  \field{journaltitle}{IEEE Transactions on Automation and Control}
+  \field{year}{1978}
+\endentry
+
+\entry{gireeja}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Ranade}{R.}%
+     {Gireeja~Vishnu}{G.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RGV1}
+  \strng{fullhash}{RGV1}
+  \field{title}{Active Systems with Uncertain Parameters: an
+  Information-Theoretic Perspective}
+  \field{year}{2014}
+\endentry
+
+\entry{utp}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Athans}{A.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ku}{K.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gershwin}{G.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AMKRGS1}
+  \strng{fullhash}{AMKRGS1}
+  \field{title}{The uncertainty threshold principle: some fundamental
+  limitations of optimal decision making under dynamic uncertainty}
+  \field{journaltitle}{Automatic Control, IEEE Transactions on., vol. 22, no.
+  3, pp. 491–495}
+  \field{year}{1977}
+\endentry
+
+\entry{deko82}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Koning}{K.}%
+     {W.~L.~De}{W.~L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KWLD1}
+  \strng{fullhash}{KWLD1}
+  \field{title}{Infinite horizon optimal control of linear discrete time
+  systems with stochastic parameters}
+  \field{journaltitle}{Automatica}
+  \field{year}{1982}
+\endentry
+
+\entry{deko88}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Koning}{K.}%
+     {W.~L.~De}{W.~L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KWLD1}
+  \strng{fullhash}{KWLD1}
+  \field{title}{Stationary optimal control of stochastically sampled
+  continuous-time systems}
+  \field{journaltitle}{Automatica}
+  \field{year}{1988}
+\endentry
+
+\entry{yaz}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Koning}{K.}%
+     {W.~L.~De}{W.~L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KWLD1}
+  \strng{fullhash}{KWLD1}
+  \field{title}{Stabilization of discrete time systems with stochastic
+  parameters}
+  \field{journaltitle}{Systems and Controls Letters}
+  \field{year}{1985}
+\endentry
+
+\entry{berstekas}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Bertsekas}{B.}%
+     {Dimitri~P.}{D.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Athena Scientific}%
+  }
+  \strng{namehash}{BDP1}
+  \strng{fullhash}{BDP1}
+  \field{title}{Dynamic programming and optimal control (vol.1)}
+  \field{year}{2005}
+\endentry
+
+\entry{samir}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Joshi}{J.}%
+     {Suresh~M.}{S.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{JSM1}
+  \strng{fullhash}{JSM1}
+  \field{title}{On Optimal Control of Linear Systems in the Presence of
+  Multiplicative Noise}
+  \field{journaltitle}{IEEE Transactions on Aerospace and Electronic Systems}
+  \field{year}{1976}
+\endentry
+
+\entry{russian}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Dombrovoskii}{D.}%
+     {V.~V.}{V.~V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lyashenko}{L.}%
+     {E.~A.}{E.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DVVLEA1}
+  \strng{fullhash}{DVVLEA1}
+  \field{title}{A linear quadratic control for discrete systems with random
+  parameters and multiplicative noise and its application to investment
+  portfolio optimization}
+  \field{journaltitle}{Automation and Remote Control}
+  \field{year}{2002}
+\endentry
+
+\entry{deko}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Willgenburg}{W.}%
+     {L.~G.~Van}{L.~G.~V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koning}{K.}%
+     {W.~L.~De}{W.~L.~D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WLGVKWLD1}
+  \strng{fullhash}{WLGVKWLD1}
+  \field{title}{Optimal reduced-order compensation of time-varying
+  discrete-time systems with deterministic and white parameters}
+  \field{journaltitle}{Automatica}
+  \field{year}{1998}
+\endentry
+
+\entry{tatikonda}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Tatikonda}{T.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mitter}{M.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{TSMS1}
+  \strng{fullhash}{TSMS1}
+  \field{title}{Control under communication constraints}
+  \field{journaltitle}{IEEE Transactions on Automatic Control}
+  \field{year}{2004}
+\endentry
+
+\entry{rate1}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Okano}{O.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ishii}{I.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{OKIH1}
+  \strng{fullhash}{OKIH1}
+  \field{title}{Minimum data rate for stabilization of linear systems with
+  parametric uncertainties}
+  \field{year}{2012}
+\endentry
+
+\entry{rate2}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nair}{N.}%
+     {G.~N.}{G.~N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fagnani}{F.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zampieri}{Z.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Evans}{E.}%
+     {R.~J.}{R.~J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{NGN+1}
+  \strng{fullhash}{NGNFFZSERJ1}
+  \field{title}{Feedback control under data rate constraints: An overview}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{2007}
+\endentry
+
+\entry{schenatto}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Schenatto}{S.}%
+     {Luca}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sinopoli}{S.}%
+     {Bruno}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SLSB1}
+  \strng{fullhash}{SLSB1}
+  \field{title}{Foundations of control and estimation over lossy networks}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{2007}
+\endentry
+
+\entry{anatoly}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Khina}{K.}%
+     {Anatoly}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kostina}{K.}%
+     {Victoria}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hassibi}{H.}%
+     {Babak}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KAKVHB1}
+  \strng{fullhash}{KAKVHB1}
+  \field{title}{Multi-Rate control over AWGN channels : An analog joint
+  source-channel coding perspective}
+  \field{journaltitle}{Conference on Decision and Control}
+  \field{year}{2016}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
