@@ -1,15 +1,14 @@
 close all
-clear all
-clc
-T=999; %total time instants (T-1)
+T=10^5 - 1; %total time instants (T-1)
 s = randn(T+1,1);
 SNR = 100; % 100 = 20 dB
 n_1 = sqrt(1/SNR)*randn((T+1),1);
 n_2 = sqrt(1/SNR)*randn((T+1),1);
-
-deltas = linspace(.000001, 10,10000);
+sig = sqrt(1/SNR);
+deltas = linspace(0.1, 5,100);
 for i_delta = 1 : length(deltas)  %starting SNR to ensure stability according to condition given in the paper
    delta = deltas(i_delta);
+    
    for t=1:1:(T+1)
        %encoder
        a_1(t) = quant(s(t),delta);
@@ -21,11 +20,33 @@ for i_delta = 1 : length(deltas)  %starting SNR to ensure stability according to
        Q_b1(t) = quant(b_1(t),delta);
        s_hat(t) = Q_b1(t) + sqrt((delta^2)/12) * b_2(t);
        
-       n_eff(t) = s(t) - s_hat(t);
+%        Qb1(i_delta) = cov(n_1) + (sqrt(2*pi)/8)*cov(n_1)*delta + 4*sqrt(2*pi)*((cov(n_1)^3)/(delta^3));
+%        Qb1(i_delta) = (delta^2)/4 + (1/SNR) + ( ( (1/sqrt(SNR)) * delta )/sqrt(2*pi) ) + ( (4 * ((1/sqrt(SNR))^3) * sqrt(2/pi) ) / (3 * delta) ) ;
+       
+       n_eff_sim(t) = s(t) - s_hat(t);
+%        n_eff(t) = cov(n_1) + (sqrt(2*pi)/8) * cov(n_1) * delta + 4*sqrt(2*pi)*((cov(n_1)^3)/(delta^3)) - a_1(t) + sqrt((delta^2)/12)*n_2(t);
+       n_eff(t) = sqrt((delta^2)/12)*n_2(t);
    end
-   n_eff_cov(i_delta) = cov(n_eff);
-   
+     summa = 0;
+	for z = 1 : 10^5
+	
+		summa = summa + delta^2 * erfc( (delta / (2 * sqrt(2) * sig) ) * z)  * (z + 1)^2 / 4;
+	
+	end	
+	val(i_delta) = summa;
+   n_eff_cov_sim(i_delta) = cov(n_eff_sim);
+   n_eff_cov(i_delta) = cov(n_eff) + val(i_delta);
+%   
+    
+%     sumac = 0;
+%     for i = 1 : 1: 10
+%         sumac = sumac + (i^2)*(delta^2) * exp(-((2*i -1)^2)*((delta^2)/8*cov(n_1)));
+%     end
+%     semisum(i_delta) = sumac;
 end
+
+% plot(semisum);
+% plot(Qb1,'r');
 % 
 % deltas_dB = linspace(-20, 20, 123);
 % deltas    = 10.^(deltas_dB/20);
@@ -78,9 +99,10 @@ hold on
 title('SDR vs Delta');
 ylabel('SDR (in dB)');
 xlabel('\Delta');
-scatter(20*log10(deltas), -10 * log10(n_eff_cov),'p');
+plot(20*log10(deltas), -10 * log10(n_eff_cov),'k');
+plot(20*log10(deltas), -10 * log10(n_eff_cov_sim),'r');
 % scatter(10 * log10(SNRs), J_opt_sim);
 % scatter(SNRs, J_opt,'+');
 % scatter(SNRs, J_opt_sim);
-% legend('Analytically computed','Simulated System');
+legend('Analytically computed','Simulated System');
 hold off

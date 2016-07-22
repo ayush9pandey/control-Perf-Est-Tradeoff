@@ -1,0 +1,96 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{anatoly}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Khina}{K.}%
+     {Anatoly}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kostina}{K.}%
+     {Victoria}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hassibi}{H.}%
+     {Babak}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KAKVHB1}
+  \strng{fullhash}{KAKVHB1}
+  \field{title}{Multi-Rate control over AWGN channels : An analog joint
+  source-channel coding perspective}
+  \field{journaltitle}{Conference on Decision and Control}
+  \field{year}{2016}
+\endentry
+
+\entry{victoria}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kostina}{K.}%
+     {Victoria}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hassibi}{H.}%
+     {Babak}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KVHB1}
+  \strng{fullhash}{KVHB1}
+  \field{title}{Rate-distortion tradeoffs in control}
+  \field{year}{2016}
+\endentry
+
+\entry{lqg}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Boyd}{B.}%
+     {Stephen}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BS1}
+  \strng{fullhash}{BS1}
+  \field{title}{Linear Quadratic Stochastic Control with Partial State
+  Observation}
+  \field{year}{2008}
+\endentry
+
+\entry{victoria2}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {al.}{a.}%
+     {Victoria~Kostina}{V.~K.}%
+     {et}{e.}%
+     {}{}}%
+  }
+  \strng{namehash}{aVKe1}
+  \strng{fullhash}{aVKe1}
+  \field{title}{Rate-limited control of systems with uncertain gain}
+  \field{year}{2016}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
