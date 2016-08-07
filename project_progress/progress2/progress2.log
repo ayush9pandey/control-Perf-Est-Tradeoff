@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.26)  18 JUL 2016 21:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.26)  25 JUL 2016 16:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1900,11 +1900,7 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 \@quotelevel=\count437
 \@quotereset=\count438
 
-(./progress2.aux
-
-LaTeX Warning: Label `lower_upper' multiply defined.
-
-)
+(./progress2.aux)
 \openout1 = `progress2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 42.
@@ -2265,17 +2261,38 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./computed_vs_simulated_snr30_manyTime.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [5 <./control_over_AWGN_withV_GaussianW.pdf> <./control_over_AWGN_withV_Gaus
+sianW.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+> <./control_over_AWGN_withV_GaussianW.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+> <./control_over_AWGN_withV_GaussianW.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+> <./control_over_AWGN_withV_GaussianW.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+> <./control_over_AWGN_withV_GaussianW.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<./laplaceW_bound_simulation_withoutV.pdf, id=167, 1055.945pt x 518.73799pt>
+<./laplaceW_bound_simulation_withoutV.pdf, id=184, 1055.945pt x 518.73799pt>
 File: ./laplaceW_bound_simulation_withoutV.pdf Graphic file (type pdf)
 
 <use ./laplaceW_bound_simulation_withoutV.pdf>
 Package pdftex.def Info: ./laplaceW_bound_simulation_withoutV.pdf used on input
- line 170.
+ line 172.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 (./laplaceW_bound_simulation_withoutV.pdf_tex
-<laplaceW_bound_simulation_withoutV.pdf, id=168, page=1, 1055.945pt x 518.73799
+<laplaceW_bound_simulation_withoutV.pdf, id=185, page=1, 1055.945pt x 518.73799
 pt>
 File: laplaceW_bound_simulation_withoutV.pdf Graphic file (type pdf)
  <use laplaceW_bound_simulation_withoutV.pdf, page 1>
@@ -2283,7 +2300,7 @@ Package pdftex.def Info: laplaceW_bound_simulation_withoutV.pdf, page1 used on
 input line 52.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<laplaceW_bound_simulation_withoutV.pdf, id=169, page=2, 1055.945pt x 518.73799
+<laplaceW_bound_simulation_withoutV.pdf, id=186, page=2, 1055.945pt x 518.73799
 pt>
 File: laplaceW_bound_simulation_withoutV.pdf Graphic file (type pdf)
  <use laplaceW_bound_simulation_withoutV.pdf, page 2>
@@ -2291,7 +2308,7 @@ Package pdftex.def Info: laplaceW_bound_simulation_withoutV.pdf, page2 used on
 input line 54.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<laplaceW_bound_simulation_withoutV.pdf, id=170, page=3, 1055.945pt x 518.73799
+<laplaceW_bound_simulation_withoutV.pdf, id=187, page=3, 1055.945pt x 518.73799
 pt>
 File: laplaceW_bound_simulation_withoutV.pdf Graphic file (type pdf)
  <use laplaceW_bound_simulation_withoutV.pdf, page 3>
@@ -2299,7 +2316,7 @@ Package pdftex.def Info: laplaceW_bound_simulation_withoutV.pdf, page3 used on
 input line 63.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<laplaceW_bound_simulation_withoutV.pdf, id=171, page=4, 1055.945pt x 518.73799
+<laplaceW_bound_simulation_withoutV.pdf, id=188, page=4, 1055.945pt x 518.73799
 pt>
 File: laplaceW_bound_simulation_withoutV.pdf Graphic file (type pdf)
  <use laplaceW_bound_simulation_withoutV.pdf, page 4>
@@ -2307,7 +2324,7 @@ Package pdftex.def Info: laplaceW_bound_simulation_withoutV.pdf, page4 used on
 input line 70.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<laplaceW_bound_simulation_withoutV.pdf, id=172, page=5, 1055.945pt x 518.73799
+<laplaceW_bound_simulation_withoutV.pdf, id=189, page=5, 1055.945pt x 518.73799
 pt>
 File: laplaceW_bound_simulation_withoutV.pdf Graphic file (type pdf)
  <use laplaceW_bound_simulation_withoutV.pdf, page 5>
@@ -2315,7 +2332,7 @@ Package pdftex.def Info: laplaceW_bound_simulation_withoutV.pdf, page5 used on
 input line 72.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<laplaceW_bound_simulation_withoutV.pdf, id=173, page=6, 1055.945pt x 518.73799
+<laplaceW_bound_simulation_withoutV.pdf, id=190, page=6, 1055.945pt x 518.73799
 pt>
 File: laplaceW_bound_simulation_withoutV.pdf Graphic file (type pdf)
  <use laplaceW_bound_simulation_withoutV.pdf, page 6>
@@ -2323,91 +2340,7 @@ Package pdftex.def Info: laplaceW_bound_simulation_withoutV.pdf, page6 used on
 input line 74.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 76--172
- [][] 
- []
-
-[5 <./control_over_AWGN_withV_GaussianW.pdf> <./control_over_AWGN_withV_Gaussia
-nW.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
-> <./control_over_AWGN_withV_GaussianW.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
-> <./control_over_AWGN_withV_GaussianW.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
-> <./control_over_AWGN_withV_GaussianW.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
-> <./control_over_AWGN_withV_GaussianW.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./control_over_AWGN_withV_GaussianW.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Overfull \hbox (65.37921pt too wide) detected at line 179
-\U/ntxsyb/m/n/12 R\U/ntxmia/m/it/12 }\OML/ntxmi/m/it/12 b\U/ntxmia/m/it/12 ~ \O
-MS/ntxsy/m/n/12 ^^U \OML/ntxmi/m/it/12 log\U/ntxmia/m/it/12 }\OMS/ntxsy/m/n/12 
-j\OML/ntxmi/m/it/12 det\U/ntxmia/m/it/12 }\OML/ntxmi/m/it/12 A\U/ntxmia/m/it/12
- ~\OMS/ntxsy/m/n/12 j\U/ntxmia/m/it/12 ~ ý []\OML/ntxmi/m/it/12 log []
- []
-
-<./laplaceW_bound_simulation_withV.pdf, id=195, 1055.945pt x 518.73799pt>
-File: ./laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
-
-<use ./laplaceW_bound_simulation_withV.pdf>
-Package pdftex.def Info: ./laplaceW_bound_simulation_withV.pdf used on input li
-ne 186.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-(./laplaceW_bound_simulation_withV.pdf_tex
-<laplaceW_bound_simulation_withV.pdf, id=196, page=1, 1055.945pt x 518.73799pt>
-File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
-<use laplaceW_bound_simulation_withV.pdf, page 1>
-Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page1 used on inp
-ut line 52.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<laplaceW_bound_simulation_withV.pdf, id=197, page=2, 1055.945pt x 518.73799pt>
-File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
-<use laplaceW_bound_simulation_withV.pdf, page 2>
-Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page2 used on inp
-ut line 54.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<laplaceW_bound_simulation_withV.pdf, id=198, page=3, 1055.945pt x 518.73799pt>
-File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
-<use laplaceW_bound_simulation_withV.pdf, page 3>
-Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page3 used on inp
-ut line 65.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<laplaceW_bound_simulation_withV.pdf, id=199, page=4, 1055.945pt x 518.73799pt>
-File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
-<use laplaceW_bound_simulation_withV.pdf, page 4>
-Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page4 used on inp
-ut line 72.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<laplaceW_bound_simulation_withV.pdf, id=200, page=5, 1055.945pt x 518.73799pt>
-File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
-<use laplaceW_bound_simulation_withV.pdf, page 5>
-Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page5 used on inp
-ut line 74.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<laplaceW_bound_simulation_withV.pdf, id=201, page=6, 1055.945pt x 518.73799pt>
-File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
-<use laplaceW_bound_simulation_withV.pdf, page 6>
-Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page6 used on inp
-ut line 76.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-)
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 78--188
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 76--174
  [][] 
  []
 
@@ -2433,12 +2366,72 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./laplaceW_bound_simulation_withoutV.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
+Overfull \hbox (69.9285pt too wide) in paragraph at lines 183--183
+[] 
+ []
+
+<./laplaceW_bound_simulation_withV.pdf, id=208, 1055.945pt x 518.73799pt>
+File: ./laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
+
+<use ./laplaceW_bound_simulation_withV.pdf>
+Package pdftex.def Info: ./laplaceW_bound_simulation_withV.pdf used on input li
+ne 190.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+
+(./laplaceW_bound_simulation_withV.pdf_tex
+<laplaceW_bound_simulation_withV.pdf, id=209, page=1, 1055.945pt x 518.73799pt>
+File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
+<use laplaceW_bound_simulation_withV.pdf, page 1>
+Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page1 used on inp
+ut line 52.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+
+<laplaceW_bound_simulation_withV.pdf, id=210, page=2, 1055.945pt x 518.73799pt>
+File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
+<use laplaceW_bound_simulation_withV.pdf, page 2>
+Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page2 used on inp
+ut line 54.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+
+<laplaceW_bound_simulation_withV.pdf, id=211, page=3, 1055.945pt x 518.73799pt>
+File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
+<use laplaceW_bound_simulation_withV.pdf, page 3>
+Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page3 used on inp
+ut line 65.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+
+<laplaceW_bound_simulation_withV.pdf, id=212, page=4, 1055.945pt x 518.73799pt>
+File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
+<use laplaceW_bound_simulation_withV.pdf, page 4>
+Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page4 used on inp
+ut line 72.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+
+<laplaceW_bound_simulation_withV.pdf, id=213, page=5, 1055.945pt x 518.73799pt>
+File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
+<use laplaceW_bound_simulation_withV.pdf, page 5>
+Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page5 used on inp
+ut line 74.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+
+<laplaceW_bound_simulation_withV.pdf, id=214, page=6, 1055.945pt x 518.73799pt>
+File: laplaceW_bound_simulation_withV.pdf Graphic file (type pdf)
+<use laplaceW_bound_simulation_withV.pdf, page 6>
+Package pdftex.def Info: laplaceW_bound_simulation_withV.pdf, page6 used on inp
+ut line 76.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+)
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 78--192
+ [][] 
+ []
+
+
 <./lowerBound_Simulation_rateLimitedLQG.pdf, id=219, 1055.945pt x 518.73799pt>
 File: ./lowerBound_Simulation_rateLimitedLQG.pdf Graphic file (type pdf)
 
 <use ./lowerBound_Simulation_rateLimitedLQG.pdf>
 Package pdftex.def Info: ./lowerBound_Simulation_rateLimitedLQG.pdf used on inp
-ut line 201.
+ut line 205.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 (./lowerBound_Simulation_rateLimitedLQG.pdf_tex
@@ -2490,7 +2483,7 @@ Package pdftex.def Info: lowerBound_Simulation_rateLimitedLQG.pdf, page6 used o
 n input line 75.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 78--202
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 78--206
  [][] 
  []
 
@@ -2517,17 +2510,17 @@ pdfTeX warning: /usr/bin/pdflatex (file ./laplaceW_bound_simulation_withV.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <./lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=
-238, 1055.945pt x 518.73799pt>
+239, 1055.945pt x 518.73799pt>
 File: ./lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf
  Graphic file (type pdf)
 
 <use ./lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf>
 Package pdftex.def Info: ./lowerBound_Simulation_GaussianDist_rateLimited_parti
-allyObservedLQG.pdf used on input line 212.
+allyObservedLQG.pdf used on input line 216.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 (./lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf_tex
-<lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=23
-9, page=1, 1055.945pt x 518.73799pt>
+<lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=24
+0, page=1, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf G
 raphic file (type pdf)
 
@@ -2538,7 +2531,7 @@ lyObservedLQG.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 <lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=24
-0, page=2, 1055.945pt x 518.73799pt>
+1, page=2, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf G
 raphic file (type pdf)
 
@@ -2549,7 +2542,7 @@ lyObservedLQG.pdf, page2 used on input line 54.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 <lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=24
-1, page=3, 1055.945pt x 518.73799pt>
+2, page=3, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf G
 raphic file (type pdf)
 
@@ -2560,7 +2553,7 @@ lyObservedLQG.pdf, page3 used on input line 60.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 <lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=24
-2, page=4, 1055.945pt x 518.73799pt>
+3, page=4, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf G
 raphic file (type pdf)
 
@@ -2571,7 +2564,7 @@ lyObservedLQG.pdf, page4 used on input line 68.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 <lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=24
-3, page=5, 1055.945pt x 518.73799pt>
+4, page=5, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf G
 raphic file (type pdf)
 
@@ -2582,7 +2575,7 @@ lyObservedLQG.pdf, page5 used on input line 70.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 <lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf, id=24
-4, page=6, 1055.945pt x 518.73799pt>
+5, page=6, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf G
 raphic file (type pdf)
 
@@ -2592,7 +2585,7 @@ Package pdftex.def Info: lowerBound_Simulation_GaussianDist_rateLimited_partial
 lyObservedLQG.pdf, page6 used on input line 72.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 75--213
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 75--217
  [][] 
  []
 
@@ -2617,62 +2610,72 @@ pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_rateLimitedLQG.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <./lowerBound_upperBound.pdf, id=258, 1055.945pt x 518.73799pt>
-File: ./lowerBound_upperBound.pdf Graphic file (type pdf)
+>] <./lowerBound_Simulation_UpperBound.pdf, id=260, 1055.945pt x 518.73799pt>
+File: ./lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
 
-<use ./lowerBound_upperBound.pdf>
-Package pdftex.def Info: ./lowerBound_upperBound.pdf used on input line 225.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
- (./lowerBound_upperBound.pdf_tex
-<lowerBound_upperBound.pdf, id=259, page=1, 1055.945pt x 518.73799pt>
-File: lowerBound_upperBound.pdf Graphic file (type pdf)
-
-<use lowerBound_upperBound.pdf, page 1>
-Package pdftex.def Info: lowerBound_upperBound.pdf, page1 used on input line 52
-.
+<use ./lowerBound_Simulation_UpperBound.pdf>
+Package pdftex.def Info: ./lowerBound_Simulation_UpperBound.pdf used on input l
+ine 241.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBound.pdf, id=260, page=2, 1055.945pt x 518.73799pt>
-File: lowerBound_upperBound.pdf Graphic file (type pdf)
-
-<use lowerBound_upperBound.pdf, page 2>
-Package pdftex.def Info: lowerBound_upperBound.pdf, page2 used on input line 54
-.
+(./lowerBound_Simulation_UpperBound.pdf_tex
+<lowerBound_Simulation_UpperBound.pdf, id=261, page=1, 1055.945pt x 518.73799pt
+>
+File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
+ <use lowerBound_Simulation_UpperBound.pdf, page 1>
+Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page1 used on in
+put line 52.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBound.pdf, id=261, page=3, 1055.945pt x 518.73799pt>
-File: lowerBound_upperBound.pdf Graphic file (type pdf)
-
-<use lowerBound_upperBound.pdf, page 3>
-Package pdftex.def Info: lowerBound_upperBound.pdf, page3 used on input line 66
-.
+<lowerBound_Simulation_UpperBound.pdf, id=262, page=2, 1055.945pt x 518.73799pt
+>
+File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
+ <use lowerBound_Simulation_UpperBound.pdf, page 2>
+Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page2 used on in
+put line 54.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBound.pdf, id=262, page=4, 1055.945pt x 518.73799pt>
-File: lowerBound_upperBound.pdf Graphic file (type pdf)
-
-<use lowerBound_upperBound.pdf, page 4>
-Package pdftex.def Info: lowerBound_upperBound.pdf, page4 used on input line 75
-.
+<lowerBound_Simulation_UpperBound.pdf, id=263, page=3, 1055.945pt x 518.73799pt
+>
+File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
+ <use lowerBound_Simulation_UpperBound.pdf, page 3>
+Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page3 used on in
+put line 63.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBound.pdf, id=263, page=5, 1055.945pt x 518.73799pt>
-File: lowerBound_upperBound.pdf Graphic file (type pdf)
-
-<use lowerBound_upperBound.pdf, page 5>
-Package pdftex.def Info: lowerBound_upperBound.pdf, page5 used on input line 77
-.
+<lowerBound_Simulation_UpperBound.pdf, id=264, page=4, 1055.945pt x 518.73799pt
+>
+File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
+ <use lowerBound_Simulation_UpperBound.pdf, page 4>
+Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page4 used on in
+put line 72.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBound.pdf, id=264, page=6, 1055.945pt x 518.73799pt>
-File: lowerBound_upperBound.pdf Graphic file (type pdf)
+<lowerBound_Simulation_UpperBound.pdf, id=265, page=5, 1055.945pt x 518.73799pt
+>
+File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
+ <use lowerBound_Simulation_UpperBound.pdf, page 5>
+Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page5 used on in
+put line 74.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<use lowerBound_upperBound.pdf, page 6>
-Package pdftex.def Info: lowerBound_upperBound.pdf, page6 used on input line 79
-.
+<lowerBound_Simulation_UpperBound.pdf, id=266, page=6, 1055.945pt x 518.73799pt
+>
+File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
+ <use lowerBound_Simulation_UpperBound.pdf, page 6>
+Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page6 used on in
+put line 76.
+(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
+
+<lowerBound_Simulation_UpperBound.pdf, id=267, page=7, 1055.945pt x 518.73799pt
+>
+File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
+ <use lowerBound_Simulation_UpperBound.pdf, page 7>
+Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page7 used on in
+put line 78.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 82--227
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 81--242
  [][] 
  []
 
@@ -2702,103 +2705,14 @@ up included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_GaussianDist_ra
 teLimited_partiallyObservedLQG.pdf): PDF inclusion: multiple pdfs with page gro
 up included in a single page
->] <./lowerBound_Simulation_UpperBound.pdf, id=276, 1055.945pt x 518.73799pt>
-File: ./lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
-
-<use ./lowerBound_Simulation_UpperBound.pdf>
-Package pdftex.def Info: ./lowerBound_Simulation_UpperBound.pdf used on input l
-ine 237.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-(./lowerBound_Simulation_UpperBound.pdf_tex
-<lowerBound_Simulation_UpperBound.pdf, id=277, page=1, 1055.945pt x 518.73799pt
->
-File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
- <use lowerBound_Simulation_UpperBound.pdf, page 1>
-Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page1 used on in
-put line 52.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<lowerBound_Simulation_UpperBound.pdf, id=278, page=2, 1055.945pt x 518.73799pt
->
-File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
- <use lowerBound_Simulation_UpperBound.pdf, page 2>
-Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page2 used on in
-put line 54.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<lowerBound_Simulation_UpperBound.pdf, id=279, page=3, 1055.945pt x 518.73799pt
->
-File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
- <use lowerBound_Simulation_UpperBound.pdf, page 3>
-Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page3 used on in
-put line 63.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<lowerBound_Simulation_UpperBound.pdf, id=280, page=4, 1055.945pt x 518.73799pt
->
-File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
- <use lowerBound_Simulation_UpperBound.pdf, page 4>
-Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page4 used on in
-put line 72.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<lowerBound_Simulation_UpperBound.pdf, id=281, page=5, 1055.945pt x 518.73799pt
->
-File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
- <use lowerBound_Simulation_UpperBound.pdf, page 5>
-Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page5 used on in
-put line 74.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<lowerBound_Simulation_UpperBound.pdf, id=282, page=6, 1055.945pt x 518.73799pt
->
-File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
- <use lowerBound_Simulation_UpperBound.pdf, page 6>
-Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page6 used on in
-put line 76.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-
-<lowerBound_Simulation_UpperBound.pdf, id=283, page=7, 1055.945pt x 518.73799pt
->
-File: lowerBound_Simulation_UpperBound.pdf Graphic file (type pdf)
- <use lowerBound_Simulation_UpperBound.pdf, page 7>
-Package pdftex.def Info: lowerBound_Simulation_UpperBound.pdf, page7 used on in
-put line 78.
-(pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
-)
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 81--238
- [][] 
- []
-
-[10 <./lowerBound_upperBound.pdf> <./lowerBound_upperBound.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_upperBound.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
-> <./lowerBound_upperBound.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_upperBound.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
-> <./lowerBound_upperBound.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_upperBound.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
-> <./lowerBound_upperBound.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_upperBound.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
-> <./lowerBound_upperBound.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_upperBound.pdf): PDF inclu
-sion: multiple pdfs with page group included in a single page
->] <./lowerBound_upperBoundL.pdf, id=295, 1055.945pt x 518.73799pt>
+>] <./lowerBound_upperBoundL.pdf, id=278, 1055.945pt x 518.73799pt>
 File: ./lowerBound_upperBoundL.pdf Graphic file (type pdf)
 
 <use ./lowerBound_upperBoundL.pdf>
-Package pdftex.def Info: ./lowerBound_upperBoundL.pdf used on input line 250.
+Package pdftex.def Info: ./lowerBound_upperBoundL.pdf used on input line 254.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
  (./lowerBound_upperBoundL.pdf_tex
-<lowerBound_upperBoundL.pdf, id=296, page=1, 1055.945pt x 518.73799pt>
+<lowerBound_upperBoundL.pdf, id=279, page=1, 1055.945pt x 518.73799pt>
 File: lowerBound_upperBoundL.pdf Graphic file (type pdf)
 
 <use lowerBound_upperBoundL.pdf, page 1>
@@ -2806,7 +2720,7 @@ Package pdftex.def Info: lowerBound_upperBoundL.pdf, page1 used on input line 5
 2.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBoundL.pdf, id=297, page=2, 1055.945pt x 518.73799pt>
+<lowerBound_upperBoundL.pdf, id=280, page=2, 1055.945pt x 518.73799pt>
 File: lowerBound_upperBoundL.pdf Graphic file (type pdf)
 
 <use lowerBound_upperBoundL.pdf, page 2>
@@ -2814,7 +2728,7 @@ Package pdftex.def Info: lowerBound_upperBoundL.pdf, page2 used on input line 5
 4.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBoundL.pdf, id=298, page=3, 1055.945pt x 518.73799pt>
+<lowerBound_upperBoundL.pdf, id=281, page=3, 1055.945pt x 518.73799pt>
 File: lowerBound_upperBoundL.pdf Graphic file (type pdf)
 
 <use lowerBound_upperBoundL.pdf, page 3>
@@ -2822,7 +2736,7 @@ Package pdftex.def Info: lowerBound_upperBoundL.pdf, page3 used on input line 6
 3.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBoundL.pdf, id=299, page=4, 1055.945pt x 518.73799pt>
+<lowerBound_upperBoundL.pdf, id=282, page=4, 1055.945pt x 518.73799pt>
 File: lowerBound_upperBoundL.pdf Graphic file (type pdf)
 
 <use lowerBound_upperBoundL.pdf, page 4>
@@ -2830,7 +2744,7 @@ Package pdftex.def Info: lowerBound_upperBoundL.pdf, page4 used on input line 7
 2.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBoundL.pdf, id=300, page=5, 1055.945pt x 518.73799pt>
+<lowerBound_upperBoundL.pdf, id=283, page=5, 1055.945pt x 518.73799pt>
 File: lowerBound_upperBoundL.pdf Graphic file (type pdf)
 
 <use lowerBound_upperBoundL.pdf, page 5>
@@ -2838,7 +2752,7 @@ Package pdftex.def Info: lowerBound_upperBoundL.pdf, page5 used on input line 7
 4.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_upperBoundL.pdf, id=301, page=6, 1055.945pt x 518.73799pt>
+<lowerBound_upperBoundL.pdf, id=284, page=6, 1055.945pt x 518.73799pt>
 File: lowerBound_upperBoundL.pdf Graphic file (type pdf)
 
 <use lowerBound_upperBoundL.pdf, page 6>
@@ -2846,21 +2760,21 @@ Package pdftex.def Info: lowerBound_upperBoundL.pdf, page6 used on input line 7
 6.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 79--252
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 79--256
  [][] 
  []
 
 
-<./lowerBound_Simulation_Laplace_Disturbance.pdf, id=302, 1055.945pt x 518.7379
+<./lowerBound_Simulation_Laplace_Disturbance.pdf, id=285, 1055.945pt x 518.7379
 9pt>
 File: ./lowerBound_Simulation_Laplace_Disturbance.pdf Graphic file (type pdf)
  <use ./lowerBound_Simulation_Laplace_Disturbance.pdf>
 Package pdftex.def Info: ./lowerBound_Simulation_Laplace_Disturbance.pdf used o
-n input line 261.
+n input line 265.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 (./lowerBound_Simulation_Laplace_Disturbance.pdf_tex
-<lowerBound_Simulation_Laplace_Disturbance.pdf, id=303, page=1, 1055.945pt x 51
+<lowerBound_Simulation_Laplace_Disturbance.pdf, id=286, page=1, 1055.945pt x 51
 8.73799pt>
 File: lowerBound_Simulation_Laplace_Disturbance.pdf Graphic file (type pdf)
  <use lowerBound_Simulation_Laplace_Disturbance.pdf, page 1>
@@ -2868,7 +2782,7 @@ Package pdftex.def Info: lowerBound_Simulation_Laplace_Disturbance.pdf, page1 u
 sed on input line 52.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_Laplace_Disturbance.pdf, id=304, page=2, 1055.945pt x 51
+<lowerBound_Simulation_Laplace_Disturbance.pdf, id=287, page=2, 1055.945pt x 51
 8.73799pt>
 File: lowerBound_Simulation_Laplace_Disturbance.pdf Graphic file (type pdf)
  <use lowerBound_Simulation_Laplace_Disturbance.pdf, page 2>
@@ -2876,7 +2790,7 @@ Package pdftex.def Info: lowerBound_Simulation_Laplace_Disturbance.pdf, page2 u
 sed on input line 54.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_Laplace_Disturbance.pdf, id=305, page=3, 1055.945pt x 51
+<lowerBound_Simulation_Laplace_Disturbance.pdf, id=288, page=3, 1055.945pt x 51
 8.73799pt>
 File: lowerBound_Simulation_Laplace_Disturbance.pdf Graphic file (type pdf)
  <use lowerBound_Simulation_Laplace_Disturbance.pdf, page 3>
@@ -2884,7 +2798,7 @@ Package pdftex.def Info: lowerBound_Simulation_Laplace_Disturbance.pdf, page3 u
 sed on input line 63.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_Laplace_Disturbance.pdf, id=306, page=4, 1055.945pt x 51
+<lowerBound_Simulation_Laplace_Disturbance.pdf, id=289, page=4, 1055.945pt x 51
 8.73799pt>
 File: lowerBound_Simulation_Laplace_Disturbance.pdf Graphic file (type pdf)
  <use lowerBound_Simulation_Laplace_Disturbance.pdf, page 4>
@@ -2892,7 +2806,7 @@ Package pdftex.def Info: lowerBound_Simulation_Laplace_Disturbance.pdf, page4 u
 sed on input line 71.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_Laplace_Disturbance.pdf, id=307, page=5, 1055.945pt x 51
+<lowerBound_Simulation_Laplace_Disturbance.pdf, id=290, page=5, 1055.945pt x 51
 8.73799pt>
 File: lowerBound_Simulation_Laplace_Disturbance.pdf Graphic file (type pdf)
  <use lowerBound_Simulation_Laplace_Disturbance.pdf, page 5>
@@ -2900,7 +2814,7 @@ Package pdftex.def Info: lowerBound_Simulation_Laplace_Disturbance.pdf, page5 u
 sed on input line 73.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_Laplace_Disturbance.pdf, id=308, page=6, 1055.945pt x 51
+<lowerBound_Simulation_Laplace_Disturbance.pdf, id=291, page=6, 1055.945pt x 51
 8.73799pt>
 File: lowerBound_Simulation_Laplace_Disturbance.pdf Graphic file (type pdf)
  <use lowerBound_Simulation_Laplace_Disturbance.pdf, page 6>
@@ -2908,11 +2822,11 @@ Package pdftex.def Info: lowerBound_Simulation_Laplace_Disturbance.pdf, page6 u
 sed on input line 75.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 78--262
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 78--266
  [][] 
  []
 
-[11 <./lowerBound_Simulation_UpperBound.pdf> <./lowerBound_Simulation_UpperBoun
+[10 <./lowerBound_Simulation_UpperBound.pdf> <./lowerBound_Simulation_UpperBoun
 d.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_UpperBound.pdf)
@@ -2939,17 +2853,17 @@ pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_UpperBound.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <./lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=3
-19, 1055.945pt x 518.73799pt>
+01, 1055.945pt x 518.73799pt>
 File: ./lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf 
 Graphic file (type pdf)
 
 <use ./lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf>
 Package pdftex.def Info: ./lowerBound_Simulation_LaplaceDist_rateLimited_partia
-llyObservedLQG.pdf used on input line 271.
+llyObservedLQG.pdf used on input line 275.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
 (./lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf_tex
-<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=320
+<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=302
 , page=1, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf Gr
 aphic file (type pdf)
@@ -2960,7 +2874,7 @@ Package pdftex.def Info: lowerBound_Simulation_LaplaceDist_rateLimited_partiall
 yObservedLQG.pdf, page1 used on input line 52.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=321
+<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=303
 , page=2, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf Gr
 aphic file (type pdf)
@@ -2971,7 +2885,7 @@ Package pdftex.def Info: lowerBound_Simulation_LaplaceDist_rateLimited_partiall
 yObservedLQG.pdf, page2 used on input line 54.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=322
+<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=304
 , page=3, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf Gr
 aphic file (type pdf)
@@ -2982,7 +2896,7 @@ Package pdftex.def Info: lowerBound_Simulation_LaplaceDist_rateLimited_partiall
 yObservedLQG.pdf, page3 used on input line 60.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=323
+<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=305
 , page=4, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf Gr
 aphic file (type pdf)
@@ -2993,7 +2907,7 @@ Package pdftex.def Info: lowerBound_Simulation_LaplaceDist_rateLimited_partiall
 yObservedLQG.pdf, page4 used on input line 68.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=324
+<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=306
 , page=5, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf Gr
 aphic file (type pdf)
@@ -3004,7 +2918,7 @@ Package pdftex.def Info: lowerBound_Simulation_LaplaceDist_rateLimited_partiall
 yObservedLQG.pdf, page5 used on input line 70.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=325
+<lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf, id=307
 , page=6, 1055.945pt x 518.73799pt>
 File: lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf Gr
 aphic file (type pdf)
@@ -3015,18 +2929,18 @@ Package pdftex.def Info: lowerBound_Simulation_LaplaceDist_rateLimited_partiall
 yObservedLQG.pdf, page6 used on input line 72.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 75--272
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 75--276
  [][] 
  []
 
-<./loweruppersimlaplace.pdf, id=326, 1055.945pt x 518.73799pt>
+<./loweruppersimlaplace.pdf, id=308, 1055.945pt x 518.73799pt>
 File: ./loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use ./loweruppersimlaplace.pdf>
-Package pdftex.def Info: ./loweruppersimlaplace.pdf used on input line 292.
+Package pdftex.def Info: ./loweruppersimlaplace.pdf used on input line 296.
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
  (./loweruppersimlaplace.pdf_tex
-<loweruppersimlaplace.pdf, id=327, page=1, 1055.945pt x 518.73799pt>
+<loweruppersimlaplace.pdf, id=309, page=1, 1055.945pt x 518.73799pt>
 File: loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use loweruppersimlaplace.pdf, page 1>
@@ -3034,7 +2948,7 @@ Package pdftex.def Info: loweruppersimlaplace.pdf, page1 used on input line 52.
 
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<loweruppersimlaplace.pdf, id=328, page=2, 1055.945pt x 518.73799pt>
+<loweruppersimlaplace.pdf, id=310, page=2, 1055.945pt x 518.73799pt>
 File: loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use loweruppersimlaplace.pdf, page 2>
@@ -3042,7 +2956,7 @@ Package pdftex.def Info: loweruppersimlaplace.pdf, page2 used on input line 54.
 
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<loweruppersimlaplace.pdf, id=329, page=3, 1055.945pt x 518.73799pt>
+<loweruppersimlaplace.pdf, id=311, page=3, 1055.945pt x 518.73799pt>
 File: loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use loweruppersimlaplace.pdf, page 3>
@@ -3050,7 +2964,7 @@ Package pdftex.def Info: loweruppersimlaplace.pdf, page3 used on input line 63.
 
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<loweruppersimlaplace.pdf, id=330, page=4, 1055.945pt x 518.73799pt>
+<loweruppersimlaplace.pdf, id=312, page=4, 1055.945pt x 518.73799pt>
 File: loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use loweruppersimlaplace.pdf, page 4>
@@ -3058,7 +2972,7 @@ Package pdftex.def Info: loweruppersimlaplace.pdf, page4 used on input line 72.
 
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<loweruppersimlaplace.pdf, id=331, page=5, 1055.945pt x 518.73799pt>
+<loweruppersimlaplace.pdf, id=313, page=5, 1055.945pt x 518.73799pt>
 File: loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use loweruppersimlaplace.pdf, page 5>
@@ -3066,7 +2980,7 @@ Package pdftex.def Info: loweruppersimlaplace.pdf, page5 used on input line 74.
 
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<loweruppersimlaplace.pdf, id=332, page=6, 1055.945pt x 518.73799pt>
+<loweruppersimlaplace.pdf, id=314, page=6, 1055.945pt x 518.73799pt>
 File: loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use loweruppersimlaplace.pdf, page 6>
@@ -3074,7 +2988,7 @@ Package pdftex.def Info: loweruppersimlaplace.pdf, page6 used on input line 76.
 
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 
-<loweruppersimlaplace.pdf, id=333, page=7, 1055.945pt x 518.73799pt>
+<loweruppersimlaplace.pdf, id=315, page=7, 1055.945pt x 518.73799pt>
 File: loweruppersimlaplace.pdf Graphic file (type pdf)
 
 <use loweruppersimlaplace.pdf, page 7>
@@ -3082,11 +2996,11 @@ Package pdftex.def Info: loweruppersimlaplace.pdf, page7 used on input line 78.
 
 (pdftex.def)             Requested size: 455.24408pt x 223.63872pt.
 )
-Overfull \hbox (57.75908pt too wide) in paragraph at lines 81--293
+Overfull \hbox (57.75908pt too wide) in paragraph at lines 81--297
  [][] 
  []
 
-[12 <./lowerBound_upperBoundL.pdf> <./lowerBound_upperBoundL.pdf
+[11 <./lowerBound_upperBoundL.pdf> <./lowerBound_upperBoundL.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_upperBoundL.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
@@ -3136,7 +3050,7 @@ ge
 pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_Laplace_Disturb
 ance.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
->] [13 <./lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pd
+>] [12 <./lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pd
 f> <./lowerBound_Simulation_LaplaceDist_rateLimited_partiallyObservedLQG.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_LaplaceDist_rat
@@ -3162,7 +3076,7 @@ p included in a single page
 pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_LaplaceDist_rat
 eLimited_partiallyObservedLQG.pdf): PDF inclusion: multiple pdfs with page grou
 p included in a single page
->] [14 <./loweruppersimlaplace.pdf> <./loweruppersimlaplace.pdf
+>] [13 <./loweruppersimlaplace.pdf> <./loweruppersimlaplace.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./loweruppersimlaplace.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
@@ -3186,39 +3100,35 @@ ion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./loweruppersimlaplace.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] [15
+>] [14
+
+
+] [15
 
 
 ] [16
-
-
-] [17
 
 
 ]
 \tf@toc=\write11
 \openout11 = `progress2.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 355.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 355.
  (./progress2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 355.
 Package rerunfilecheck Info: File `progress2.out' has not changed.
-(rerunfilecheck)             Checksum: 5E10C671CCFAED7FD3BA45F5D13253D1;783.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 6F4E3D0DAF4536FFABE750BFF8BF3671;783.
 Package logreq Info: Writing requests to 'progress2.run.xml'.
 \openout1 = `progress2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32922 strings out of 493304
- 583152 string characters out of 6139871
+ 32896 strings out of 493304
+ 582257 string characters out of 6139871
  996395 words of memory out of 5000000
- 35701 multiletter control sequences out of 15000+600000
+ 35676 multiletter control sequences out of 15000+600000
  50122 words of font info for 100 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  72i,12n,98p,10533b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3233,10 +3143,10 @@ e/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on progress2.pdf (19 pages, 181654 bytes).
+Output written on progress2.pdf (18 pages, 176822 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 59 named destinations out of 1000 (max. 500000)
- 1072 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 1037 words of extra memory for PDF output out of 10000 (max. 10000000)
 

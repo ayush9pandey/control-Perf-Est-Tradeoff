@@ -66,8 +66,8 @@ s_bar_tilde=zeros((T+1),1);
 
 %%%%% Without optimizing %%%%%%%%%%
 
-limit1 = 5*alpha; %for truncation
-limit2 = -5*alpha;
+limit1 = 3; %for truncation
+limit2 = -3;
 for t=(T+1):-1:2
     S(t-1)=((alpha^2)*R*S(t))/(S(t)+R) + Q; % controller ARE iterations
 end
@@ -97,12 +97,13 @@ for t=2:1:(T+1)
     y(t) = x(t) + v(t);
     s(t) = y(t) - alpha * x_hat_t(t-1) - u(t-1);
     s_bar(t) = sqrt(1/(P(t)+V)) * s(t);
-    y_tilde(t) = s_bar(t) - s_bar_tilde(t);
+    s_barQ(t) = truncate(s_bar(t), limit1, limit2);
+    y_tilde(t) = s_barQ(t) - s_bar_tilde(t);
     x_hat(t) = alpha * x_hat_t(t-1) + u(t-1);
     x_hat_t(t) = x_hat(t) + K(t)*y_tilde(t);
     if t<(T+1)
-        u(t) = -L(t)*truncate(x_hat_t(t), limit1, limit2);
-%         u(t) = -L(t)*x_hat_t(t);
+%         u(t) = -L(t)*truncate(x_hat_t(t), limit1, limit2);
+        u(t) = -L(t)*x_hat_t(t);
         x(t+1) = alpha*x(t)+u(t)+w(t);
         sumac = sumac + (Q*(x(t)^2)) + (R*(u(t))^2);
     end

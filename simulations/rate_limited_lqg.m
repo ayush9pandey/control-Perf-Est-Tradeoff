@@ -126,7 +126,7 @@ for i_delta = 1 : length(Deltas)
     %compute lower bound
 %  %     Fully observable
 %     Rb(i_delta) = H_q(i_delta) + log2(e) + log2(H_q(i_delta) + 1);
-%     b(i_delta) = bmin + (n * (Nw * (abs(det(M))^(1/n)))) / (exp( (2/n) * (H_q(i_delta) - log(abs(det(alpha))))) - 1);
+    b(i_delta) = bmin + (n * (Nw * (abs(det(M))^(1/n)))) / (exp( (2/n) * (H_q(i_delta) - log(abs(det(alpha))))) - 1);
 %     
     % Partially Observable
 %     fact = (((abs(det(C * (Td - W) * C' + V))^(1/n)) + (abs(det(C'*C))^(1/n))*Nw)*(abs(det(Kd * M))^(1/n)))/(exp( (2/n) * (H_q(i_delta) - log(abs(det(A)))))-1);
@@ -175,10 +175,10 @@ for i_Cost = length(Cost) : -1 : 1
     %% Lower Bound
     
     %Fully Observable
-    Rb(i_Cost) = log(det(alpha)) + (n/2) * log(1 + (Nw * abs(det(M))^(1/n)) / ((bU - bmin)/n));
+%     Rb(i_Cost) = log(det(alpha)) + (n/2) * log(1 + (Nw * abs(det(M))^(1/n)) / ((bU - bmin)/n));
     
     %Partially Observable
-%     Rb(i_Cost) = log(det(alpha)) + (n/2) * log( 1 + ( n * ((abs(det( C * (Td - W) * C' + V))^(1/n)) + (abs(det(C'*C))^(1/n)) * Nw) * (abs(det(Kd*M))^(1/n))) / (bU - bmin) );
+    Rb(i_Cost) = log(det(alpha)) + (n/2) * log( 1 + ( n * ((abs(det( C * (Td - W) * C' + V))^(1/n)) + (abs(det(C'*C))^(1/n)) * Nw) * (abs(det(Kd*M))^(1/n))) / (bU - bmin) );
     
     %% Upper Bound
     
