@@ -1,0 +1,82 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'loweruppersimlaplace.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1052bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.49125475)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{loweruppersimlaplace.pdf}}%
+    \put(0.50456312,0.02534852){\makebox(0,0)[lb]{\smash{Cost}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{loweruppersimlaplace.pdf}}%
+    \put(0.12661597,0.04005072){\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.25576677,0.04005072){\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.38491764,0.04005072){\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.51406844,0.04005072){\makebox(0,0)[lb]{\smash{7}}}%
+    \put(0.64321924,0.04005072){\makebox(0,0)[lb]{\smash{8}}}%
+    \put(0.77237011,0.04005072){\makebox(0,0)[lb]{\smash{9}}}%
+    \put(0.89847909,0.04005072){\makebox(0,0)[lb]{\smash{10}}}%
+    \put(0.11305452,0.18631194){\rotatebox{90}{\makebox(0,0)[lb]{\smash{Quantizer Entropy, nats}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{loweruppersimlaplace.pdf}}%
+    \put(0.11913817,0.05057034){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.11913817,0.10782183){\makebox(0,0)[lb]{\smash{1}}}%
+    \put(0.11913817,0.16507331){\makebox(0,0)[lb]{\smash{2}}}%
+    \put(0.11913817,0.22232479){\makebox(0,0)[lb]{\smash{3}}}%
+    \put(0.11913817,0.27957635){\makebox(0,0)[lb]{\smash{4}}}%
+    \put(0.11913817,0.33682783){\makebox(0,0)[lb]{\smash{5}}}%
+    \put(0.11913817,0.39407932){\makebox(0,0)[lb]{\smash{6}}}%
+    \put(0.11913817,0.4513308){\makebox(0,0)[lb]{\smash{7}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{loweruppersimlaplace.pdf}}%
+    \put(0.63887787,0.41179445){\makebox(0,0)[lb]{\smash{Computed Lower Bound}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{loweruppersimlaplace.pdf}}%
+    \put(0.63887787,0.38250951){\makebox(0,0)[lb]{\smash{Simulated System}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{loweruppersimlaplace.pdf}}%
+    \put(0.63887787,0.35322456){\makebox(0,0)[lb]{\smash{Computer Upper Bound}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{loweruppersimlaplace.pdf}}%
+    \put(0.24233209,0.08391939){\makebox(0,0)[lb]{\smash{log(det(A))}}}%
+    \put(0.16172373,0.12498403){\makebox(0,0)[lb]{\smash{bmin}}}%
+  \end{picture}%
+\endgroup%

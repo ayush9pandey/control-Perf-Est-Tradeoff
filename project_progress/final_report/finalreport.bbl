@@ -1,0 +1,208 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{constraints}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zhang}{Z.}%
+     {Lixian}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gao}{G.}%
+     {Huijun}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kaynak}{K.}%
+     {Okyay}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZLGHKO1}
+  \strng{fullhash}{ZLGHKO1}
+  \field{title}{Network-Induced Constraints in Networked Control Systems - A
+  Survey}
+  \field{journaltitle}{IEEE Transactions on Industrial Informatics}
+  \field{year}{2013}
+\endentry
+
+\entry{book}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Anderson}{A.}%
+     {B.}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moore}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Prentice Hall}%
+  }
+  \strng{namehash}{ABMJ1}
+  \strng{fullhash}{ABMJ1}
+  \field{title}{Optimal control - Linear quadratic methods}
+  \list{location}{1}{%
+    {Englewood Cliffs, New Jersey}%
+  }
+  \field{year}{1989}
+\endentry
+
+\entry{victoria}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kostina}{K.}%
+     {Victoria}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hassibi}{H.}%
+     {Babak}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KVHB1}
+  \strng{fullhash}{KVHB1}
+  \field{title}{Rate-distortion tradeoffs in control}
+  \field{year}{2016}
+\endentry
+
+\entry{anatoly}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Khina}{K.}%
+     {Anatoly}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kostina}{K.}%
+     {Victoria}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hassibi}{H.}%
+     {Babak}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KAKVHB1}
+  \strng{fullhash}{KAKVHB1}
+  \field{title}{Multi-Rate control over AWGN channels : An analog joint
+  source-channel coding perspective}
+  \field{journaltitle}{Conference on Decision and Control}
+  \field{year}{2016}
+\endentry
+
+\entry{lqg}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Boyd}{B.}%
+     {Stephen}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BS1}
+  \strng{fullhash}{BS1}
+  \field{title}{Linear Quadratic Stochastic Control with Partial State
+  Observation}
+  \field{year}{2008}
+\endentry
+
+\entry{git}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Pandey}{P.}%
+     {Ayush}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PA1}
+  \strng{fullhash}{PA1}
+  \field{title}{Project source files. LaTeX project reports and MATLAB codes}
+  \verb{url}
+  \verb http://github.com/ayush9pandey/Control-Perf-Est-Tradeoff/
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{utp}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Athans}{A.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ku}{K.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gershwin}{G.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AMKRGS1}
+  \strng{fullhash}{AMKRGS1}
+  \field{title}{The uncertainty threshold principle: some fundamental
+  limitations of optimal decision making under dynamic uncertainty}
+  \field{journaltitle}{Automatic Control, IEEE Transactions on., vol. 22, no.
+  3, pp. 491–495}
+  \field{year}{1977}
+\endentry
+
+\entry{berstekas}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Bertsekas}{B.}%
+     {Dimitri~P.}{D.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Athena Scientific}%
+  }
+  \strng{namehash}{BDP1}
+  \strng{fullhash}{BDP1}
+  \field{title}{Dynamic programming and optimal control (vol.1)}
+  \field{year}{2005}
+\endentry
+
+\entry{victoria2}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {al.}{a.}%
+     {Victoria~Kostina}{V.~K.}%
+     {et}{e.}%
+     {}{}}%
+  }
+  \strng{namehash}{aVKe1}
+  \strng{fullhash}{aVKe1}
+  \field{title}{Rate-limited control of systems with uncertain gain}
+  \field{year}{2016}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
