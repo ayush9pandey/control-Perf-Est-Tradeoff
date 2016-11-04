@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.26)  29 OCT 2016 05:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.26)  4 NOV 2016 05:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2413,10 +2413,6 @@ pdfTeX warning: /usr/bin/pdflatex (file ./lowerBound_Simulation_GaussianDist_ra
 teLimited_partiallyObservedLQG.pdf): PDF inclusion: multiple pdfs with page gro
 up included in a single page
 >]
-runsystem(inkscape -z -C -f./multiplicative_randomness_rate_limited.svg -A./mul
-tiplicative_randomness_rate_limited.pdf --export-latex)...executed.
-
-
 <./multiplicative_randomness_rate_limited.pdf, id=220, 1055.945pt x 553.26701pt
 >
 File: ./multiplicative_randomness_rate_limited.pdf Graphic file (type pdf)
@@ -2567,7 +2563,7 @@ e1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
 fonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on finalreport.pdf (15 pages, 149450 bytes).
+Output written on finalreport.pdf (15 pages, 149557 bytes).
 PDF statistics:
  325 PDF objects out of 1000 (max. 8388607)
  254 compressed objects within 3 object streams

@@ -83,6 +83,8 @@
   \strng{namehash}{KVHB1}
   \strng{fullhash}{KVHB1}
   \field{title}{Rate-distortion tradeoffs in control}
+  \field{journaltitle}{54th Annual Allerton Conference on Communication,
+  Control and Computing}
   \field{year}{2016}
 \endentry
 
@@ -199,6 +201,8 @@
   \strng{namehash}{aVKe1}
   \strng{fullhash}{aVKe1}
   \field{title}{Rate-limited control of systems with uncertain gain}
+  \field{journaltitle}{54th Annual Allerton Conference on Communication,
+  Control and Computing}
   \field{year}{2016}
 \endentry
 
