@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{caltech_thesis}
+\ProvidesClass{caltech_thesis_finalreport}
               [2016/01/28 v0.1
  Caltech thesis class]
 
@@ -129,7 +129,7 @@
 \university{California Institute of Technology}     % Default is Caltech
 
 \newcommand{\unilogo}{\gdef\@unilogo}
-\unilogo{caltech.png}                                  % Caltech logo
+%\unilogo{caltech.png}                                  % Caltech logo
 
 \newcommand{\address}{\gdef\@address}
 \address{Pasadena, California}                      % Default is Caltech
@@ -169,7 +169,7 @@
    \begin{center}
      {\SingleSpacing\Large\@title\par}
      \titleskip
-     Final Report by\\
+     Technical Report by\\
      {\large \@author}\par
      \authorskip
     Visiting Undergraduate Research Program\\
@@ -261,8 +261,8 @@ Add the option \texttt{iknowwhattodo} to this environment to dismiss this messag
 \renewcommand{\nomentryend}{.}
 
 % Overleaf: 25 January 2016 -- for index
-\RequirePackage{imakeidx}
-\makeindex[columns=1,options=-s simple_letters]
+%\RequirePackage{imakeidx}
+%\makeindex[columns=1,options=-s simple_letters]
 
 % Overleaf: 25 January 2016 -- for endnotes
 \RequirePackage{endnotes}

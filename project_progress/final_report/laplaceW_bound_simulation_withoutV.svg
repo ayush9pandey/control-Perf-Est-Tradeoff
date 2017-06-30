@@ -39,8 +39,8 @@
      id="namedview4614"
      showgrid="false"
      inkscape:zoom="0.63881586"
-     inkscape:cx="1005.2753"
-     inkscape:cy="222.48195"
+     inkscape:cx="504.34848"
+     inkscape:cy="347.71366"
      inkscape:window-x="51"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -284,71 +284,72 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="translate(680.5005,598.6667)"
-       style="font-size:15px; fill:rgb(38,38,38); text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'SansSerif'; color-interpolation:linearRGB; stroke:rgb(38,38,38);"
+       transform="matrix(2.2357766,0,0,3.1575145,760.24249,593.04958)"
+       style="font-size:15px;font-family:SansSerif;color-interpolation:linearRGB;fill:#262626;stroke:#262626;stroke-width:0.37636837;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        id="g4478">
       <text
          x="-66"
          xml:space="preserve"
          y="14"
-         style="stroke:none;"
+         style="stroke:none"
          id="text4480">Performance cost</text>
     </g>
     <g
-       style="fill:rgb(38,38,38); text-rendering:geometricPrecision; color-interpolation:linearRGB; color-rendering:optimizeQuality; image-rendering:optimizeQuality; stroke:rgb(38,38,38);"
-       id="g4482">
+       style="color-interpolation:linearRGB;fill:#262626;stroke:#262626;stroke-width:0.7110613;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
+       id="g4482"
+       transform="matrix(1.029188,0,0,1.9217248,-4.991141,-529.99176)">
       <line
          y2="575"
-         style="fill:none;"
+         style="fill:none;stroke-width:0.5056082"
          x1="171"
          x2="1190"
          y1="575"
          id="line4484" />
       <line
          y2="564.81"
-         style="fill:none;"
+         style="fill:none;stroke-width:0.5056082"
          x1="171"
          x2="171"
          y1="575"
          id="line4486" />
       <line
          y2="564.81"
-         style="fill:none;"
-         x1="340.8333"
-         x2="340.8333"
+         style="fill:none;stroke-width:0.5056082"
+         x1="340.83331"
+         x2="340.83331"
          y1="575"
          id="line4488" />
       <line
          y2="564.81"
-         style="fill:none;"
-         x1="510.6667"
-         x2="510.6667"
+         style="fill:none;stroke-width:0.5056082"
+         x1="510.66669"
+         x2="510.66669"
          y1="575"
          id="line4490" />
       <line
          y2="564.81"
-         style="fill:none;"
+         style="fill:none;stroke-width:0.5056082"
          x1="680.5"
          x2="680.5"
          y1="575"
          id="line4492" />
       <line
          y2="564.81"
-         style="fill:none;"
-         x1="850.3333"
-         x2="850.3333"
+         style="fill:none;stroke-width:0.5056082"
+         x1="850.33331"
+         x2="850.33331"
          y1="575"
          id="line4494" />
       <line
          y2="564.81"
-         style="fill:none;"
+         style="fill:none;stroke-width:0.5056082"
          x1="1020.1667"
          x2="1020.1667"
          y1="575"
          id="line4496" />
       <line
          y2="564.81"
-         style="fill:none;"
+         style="fill:none;stroke-width:0.5056082"
          x1="1190"
          x2="1190"
          y1="575"
@@ -432,15 +433,16 @@
          id="text4526">10</text>
     </g>
     <g
-       transform="translate(144.6667,311.4997) rotate(-90)"
-       style="font-size:15px; fill:rgb(38,38,38); text-rendering:geometricPrecision; color-rendering:optimizeQuality; image-rendering:optimizeQuality; font-family:'SansSerif'; color-interpolation:linearRGB; stroke:rgb(38,38,38);"
+       transform="matrix(0,-1.6176051,3.5750455,0,149.87463,285.55335)"
+       style="font-size:15px;font-family:SansSerif;color-interpolation:linearRGB;fill:#262626;stroke:#262626;stroke-width:0.41583684;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        id="g4528">
       <text
-         x="-43"
+         x="-34.563282"
          xml:space="preserve"
-         y="-4"
-         style="stroke:none;"
-         id="text4530">SNR (in dB)</text>
+         y="-5.0439"
+         style="font-size:18.91462326px;stroke:none"
+         id="text4530"
+         transform="scale(1.2609749,0.79303717)">SNR (in dB)</text>
     </g>
     <g
        style="fill:rgb(38,38,38); text-rendering:geometricPrecision; color-interpolation:linearRGB; color-rendering:optimizeQuality; image-rendering:optimizeQuality; stroke:rgb(38,38,38);"
@@ -602,14 +604,14 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="translate(954.7158,83.3102)"
-       style="text-rendering:geometricPrecision; font-family:'SansSerif'; color-interpolation:linearRGB; color-rendering:optimizeQuality; image-rendering:optimizeQuality;"
+       transform="matrix(1.6087469,0,0,2.6175235,954.30561,82.77861)"
+       style="font-family:SansSerif;color-interpolation:linearRGB;stroke-width:0.48731619;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        id="g4590">
       <text
          x="0"
          xml:space="preserve"
          y="4.5"
-         style="stroke:none;"
+         style="stroke:none"
          id="text4592">Computed lower bound</text>
     </g>
     <g
@@ -624,14 +626,14 @@
          id="line4596" />
     </g>
     <g
-       transform="translate(954.7158,117.6898)"
-       style="text-rendering:geometricPrecision; font-family:'SansSerif'; color-interpolation:linearRGB; color-rendering:optimizeQuality; image-rendering:optimizeQuality;"
+       transform="matrix(2.0200321,0,0,2.4827299,953.90894,124.53584)"
+       style="font-family:SansSerif;color-interpolation:linearRGB;stroke-width:0.44653565;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
        id="g4598">
       <text
          x="0"
          xml:space="preserve"
          y="4.5"
-         style="stroke:none;"
+         style="stroke:none"
          id="text4600">Simulated System</text>
     </g>
     <g

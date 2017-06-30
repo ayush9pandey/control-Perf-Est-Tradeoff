@@ -8,12 +8,13 @@
 \usepackage[hyphens]{url}
 \usepackage{lipsum}
 \usepackage{graphicx}
-\usepackage{svg}
+%\usepackage{svg}
 \usepackage{todonotes}
-\usepackage{hyperref}
+
 \usepackage{dirtytalk}
 \graphicspath{{images/}}
 \usepackage{float}
+\usepackage{hyperref}
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -25,7 +26,10 @@
 %% Tentative: newtx for better-looking Times
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{newtxtext,newtxmath}
+%\usepackage{newtxtext,newtxmath}
+%\usepackage{newtxmath}
+\usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage[backend=bibtex,
 style=numeric,
 bibencoding=ascii,
@@ -48,7 +52,8 @@ sorting=none
 
 %\degreeaward{Visiting Undergraduate Research Program}                 % Degree to be awarded
 \university{California Institute of Technology}    % Institution name
-\address{Pasadena, California}                     % Institution address
+\address{Pasadena, California}  
+	                   % Institution address
 \unilogo{caltech.png}                                 % Institution logo
 \copyyear{Oct 2016}  % Year (of graduation) on diploma
 \defenddate{17th Oct}          % Date of defense
@@ -87,14 +92,13 @@ sorting=none
 
 \chapter{Introduction}
 \label{intro}
-	Over the past few decades the fields of communication and control have been developed extensively to support the emerging needs of the society such as higher speed internet, better telephone communication networks, wireless access to devices over Internet of Things (IoT), reliable long distance satellite communication, home automation and many other related fields. While communication theory is mainly concerned with the transmission of information from one point to another reliably it does not deal with what is done with the information once it is transmitted. Control theory, on the other hand, mainly deals with using the information it receives as feedback in order to achieve better performing systems, which are not prone to disturbances, noises and other process variations. Although there is substantial individual research on control and information theory, the research on networked control systems (control systems with communication between its components) is still in a nascent stage.\\
-Networked control systems are increasingly finding wide applications but they also pose newer challenges which are neither addressed in control theory nor in information theory. The components of a networked control system are physically distributed with communication links between the plant, controller, observer and/or the actuators. These links connecting the different components are often noisy and pose various other constraints (See \cite{constraints} for details). Hence, the control design and analysis needs to be done keeping in mind these information bottlenecks. In control system design, it is usually desired to minimize a performance index. Because of the information bottlenecks, there exists a tradeoff between the best achievable performance and the observation accuracy (it is intuitive that worse the observation accuracy, worse would be the performance of the system). \\
+	Over the past few decades the fields of communication and control have been developed extensively to support the emerging needs of the society such as higher speed internet, better telephone communication networks, wireless access to devices over Internet of Things (IoT), reliable long distance satellite communication, home automation and many other related fields. While communication theory is mainly concerned with the transmission of information from one point to another reliably it does not deal with what is done with the information once it is transmitted. Control theory, on the other hand, mainly deals with using the information it receives as feedback in order to achieve better performing systems, which are not prone to disturbances, noises and other process variations. Although there is substantial research on control and information theory, the research on networked control systems (control systems with communication between its components) is still in a nascent stage.\\
+Networked control systems are increasingly finding wide applications but they also pose newer challenges which are neither addressed in control theory nor in information theory. The components of a networked control system are physically distributed with communication links between the plant, controller, observer and/or the actuators. These links connecting the different components are often noisy and pose various other constraints (See \cite{constraints} for details). Hence, the control design and analysis needs to be done keeping in mind these information bottlenecks. In control system design, it is usually desired to minimize a performance index. Because of the information bottlenecks, there exists a tradeoff between the best achievable performance and the observation accuracy (it is intuitive that worse the observation accuracy, worse would be the performance of the system). 
 We dealt with two important settings of networked control systems in this project:
 \begin{enumerate}
 \item Noiseless rate-limited communication of data between observer and controller 
 \item Communication over Additive White Gaussian Noise (AWGN) channel between the observer and the controller.
 \end{enumerate} 
-
 \chapter{Background}
 Throughout this paper, unless otherwise mentioned, we deal with a Linear Quadratic Gaussian (LQG) control system setting with a communication link between the observer and the controller. This section covers LQG control theory very briefly and introduces the two communication constraints --- rate-limited channel and AWGN channel in the feedback path.
 
@@ -112,9 +116,10 @@ Throughout this paper, unless otherwise mentioned, we deal with a Linear Quadrat
 			  \centering
 %			  \includesvg[width=1.0\textwidth]{block2}
 %			  \def\svgscale{5.5}
-%			  \tiny{
-%			  \input{ulft.pdf_tex}}
-			\includegraphics[scale=0.5]{lqg_block}
+			  \tiny{
+			  \resizebox{10cm}{!}{\input{lqg_block.pdf_tex}}}
+%			\includegraphics[scale=0.5]{lqg_block}
+%			\includesvg[width=10cm]{lqg_block}
 			  \caption{Representative Block Diagram of Classical Partially Observed LQG Control}
 			 \label{lqg}
 		\end{figure}	
@@ -131,8 +136,7 @@ Throughout this paper, unless otherwise mentioned, we deal with a Linear Quadrat
 	If in Fig.(\ref{lqg}) the observer data is transmitted via a digital communication link to the controller then the system performance would also be dependent on the data rate at which this communication is done. Hence, there exists a tradeoff between communication rate and optimal performance (faster the rate, better the performance). \\We studied the tightness of the bounds on the performance cost for the rate-limited noiseless communication channel using different quantization schemes. The information-theoretic lower and upper bounds have been given in \cite{victoria}. We also considered a system where the system matrix $A$ (see Eq.(\ref{systemeq})) is uncertain but has a known probability distribution. 
 	\subsection{Additive White Gaussian Channel}
 We studied a system where the observations are corrupted by additive white Gaussian noise during the transmission from the observer to the controller, which is often the case when analog communication is used to transmit information.
-Continuing on the work in the recent paper \cite{anatoly} where the system disturbances $w$ (See Eq.(\ref{systemeq})) have been assumed to have Gaussian distribution, we instead dealt with other probability distributions of $w$. We tried to show that the information-theoretic bounds (as given in \cite{victoria}) are tight even when $w$ is not Gaussian.
-
+Continuing on the work in the recent paper \cite{anatoly} where the system disturbances $w$ (See Eq.(\ref{systemeq} )) have been assumed to have Gaussian distribution, we instead dealt with other probability distributions of $w$. We tried to show that the information-theoretic bounds (as given in \cite{victoria}) are tight even when $w$ is not Gaussian.
 \chapter{AWGN Communication Constraint}
 Consider the scalar system in Eq.(\ref{systemeq}) but with communication over AWGN channel between observer and the controller. Using controller and estimator (Kalman Filter) Algebraic Riccati Equations (AREs) (see \cite{anatoly} and \cite{lqg}) we have the expressions for the controller gain $L(t)$ and Kalman gain $P(t)$ for the control over AWGN channel case.
 \begin{align}
@@ -187,9 +191,9 @@ L(t) &= \frac{AS(t+1)}{S(t+1) + R}\\
 	 \\To study the tightness of the lower bound given in Eq.(\ref{lowerbound}) we simulated the system and compared it with the lower bound plot. The result is shown in Fig.(\ref{lowerbound_vs_laplace}). We used a Laplace distribution for $w$ (with zero mean and $\sigma_{w} = 1$) to simulate the system and to calculate the lower bound. 
 		\begin{figure}[H]
 			  \centering
-			 \tiny{	
-%			  \resizebox{5in}{!}{\input{lowerBound_Simulation_rateLimitedLQG.pdf_tex}}
-			\includesvg[width=14cm]{laplaceW_bound_simulation_withoutV}}
+%			 \tiny{	
+			  \resizebox{15cm}{!}{\input{laplaceW_bound_simulation_withoutV.pdf_tex}}
+%			\includesvg[width=20cm]{laplaceW_bound_simulation_withoutV}}
 %			\includegraphics[scale=0.27]{laplaceW_bound_simulation_withoutV}
 			  \caption{Comparing the computed optimal cost with the simulated optimal cost for system with AWGN communication channel. The fully observable system has the parameter $A = 2$ and the system disturbance $w$ is zero mean Laplacian with $\sigma_{w} = 1$.}
 			 \label{lowerbound_vs_laplace}
@@ -223,9 +227,9 @@ L(t) &= \frac{AS(t+1)}{S(t+1) + R}\\
 			  \centering
 %			  \includesvg[width=1.0\textwidth]{block2}
 %			  \def\svgscale{5.5}
-			  \tiny{
-%			  \resizebox{5in}{!}{\input{lowerBound_Simulation_rateLimitedLQG.pdf_tex}}
-			\includesvg[width=14cm]{lowerBound_Simulation_rateLimitedLQG}}
+%			  \tiny{
+			  \resizebox{15cm}{!}{\input{lowerBound_Simulation_rateLimitedLQG.pdf_tex}}
+%			\includesvg[width=14cm]{lowerBound_Simulation_rateLimitedLQG}}
 			  \caption{Comparing the lower bound to the computed optimal cost with the simulated optimal cost for system with rate-limited channel. The fully observable system has the parameter $A = 2$, and the system disturbance $w$ is zero mean Gaussian with $\sigma_{w} = 1$}
 			 \label{lowerboundQ_sim}
 		\end{figure}	
@@ -234,9 +238,9 @@ L(t) &= \frac{AS(t+1)}{S(t+1) + R}\\
 			  \centering
 %			  \includesvg[width=1.0\textwidth]{block2}
 %			  \def\svgscale{5.5}
-			  \tiny{
-%			  \input{ulft.pdf_tex}}
-			\includesvg[width=14cm]{lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG}}
+%			  \tiny{
+			 \resizebox{15cm}{!}{\input{lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG.pdf_tex}}
+%			\includesvg[width=14cm]{lowerBound_Simulation_GaussianDist_rateLimited_partiallyObservedLQG}}
 			  \caption{Comparing the lower bound to the computed optimal cost with the simulated optimal cost for system with rate-limited channel. The partially observable system has the parameter $A = 2$, the system disturbance $w$ is zero mean Gaussian with $\sigma_{w} = 1$ and observation noise is assumed to be zero mean Gaussian with $\sigma_{v} = 1$}
 			 \label{lowerboundQ_sim_v}
 		\end{figure}	
@@ -327,9 +331,9 @@ Further results showing the upper bound as well along with lower bound and simul
 			  \centering
 %			  \includesvg[width=1.0\textwidth]{block2}
 %			  \def\svgscale{5.5}
-			  \tiny{
-%			  \input{ulft.pdf_tex}}
-			\includesvg[width=14cm]{multiplicative_randomness_rate_limited}}
+%			  \tiny{
+			  \resizebox{15cm}{!}{\input{multiplicative_randomness_rate_limited.pdf_tex}}
+%			\includesvg[width=14cm]{multiplicative_randomness_rate_limited}}
 			  \caption{Comparing the lower bound to the optimal cost in the rate-limited channel case with uncertain system parameter $A$ using a uniform quantization scheme. The fully observable system has the parameter $A = 2$ and the system disturbance $w$ is zero mean Gaussian with $\sigma_{w} = 1$}
 			 \label{bound_randomA}
 		\end{figure}	

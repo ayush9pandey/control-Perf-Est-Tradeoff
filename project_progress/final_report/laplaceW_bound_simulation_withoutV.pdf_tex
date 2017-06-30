@@ -50,7 +50,7 @@
   \makeatother%
   \begin{picture}(1,0.49125475)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{laplaceW_bound_simulation_withoutV.pdf}}%
-    \put(0.46730076,0.02534852){\makebox(0,0)[lb]{\smash{Performance cost}}}%
+    \put(0.46591729,0.00665036){\makebox(0,0)[lb]{\smash{Performance cost}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{laplaceW_bound_simulation_withoutV.pdf}}%
     \put(0.12661597,0.04005065){\makebox(0,0)[lb]{\smash{4}}}%
     \put(0.25576677,0.04005065){\makebox(0,0)[lb]{\smash{5}}}%
@@ -59,7 +59,7 @@
     \put(0.64321924,0.04005065){\makebox(0,0)[lb]{\smash{8}}}%
     \put(0.77237011,0.04005065){\makebox(0,0)[lb]{\smash{9}}}%
     \put(0.89847909,0.04005065){\makebox(0,0)[lb]{\smash{10}}}%
-    \put(0.10697087,0.22167323){\rotatebox{90}{\makebox(0,0)[lb]{\smash{SNR (in dB)}}}}%
+    \put(0.10309844,0.22049116){\rotatebox{90}{\makebox(0,0)[lb]{\smash{SNR (in dB)}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{laplaceW_bound_simulation_withoutV.pdf}}%
     \put(0.11913817,0.1090416){\makebox(0,0)[lb]{\smash{6}}}%
     \put(0.11913817,0.17533802){\makebox(0,0)[lb]{\smash{8}}}%
@@ -68,9 +68,9 @@
     \put(0.11305452,0.37422745){\makebox(0,0)[lb]{\smash{14}}}%
     \put(0.11305452,0.44052395){\makebox(0,0)[lb]{\smash{16}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{laplaceW_bound_simulation_withoutV.pdf}}%
-    \put(0.72601962,0.42447894){\makebox(0,0)[lb]{\smash{Computed lower bound}}}%
+    \put(0.72570769,0.41934793){\makebox(0,0)[lb]{\smash{Computed lower bound}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{laplaceW_bound_simulation_withoutV.pdf}}%
-    \put(0.72601962,0.39833475){\makebox(0,0)[lb]{\smash{Simulated System}}}%
+    \put(0.72540604,0.38805466){\makebox(0,0)[lb]{\smash{Simulated System}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{laplaceW_bound_simulation_withoutV.pdf}}%
     \put(0.16856783,0.17749513){\makebox(0,0)[lb]{\smash{bmin}}}%
   \end{picture}%
